@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Shrikhand|Alfa+Slab+One|Archivo+Black|Abril+Fatface|Anton|Bree+Serif" rel="stylesheet">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="icon" type="image/jpg" href="GCAN.png">
+  <title>Gabriel Caniglia</title>
+</head>
+<body>
+    <section class="intro">
+      <div id="particles-js"></div>
+      <div class="first">
+        <h1 id="titleText">Hi, I'm <b>Gabriel Caniglia</b>.</h1>
+        <p class="bio" style="margin-top: 50px;">I study cognitive science, computer science, and design at Northwestern University.
+        My interests lie broadly in human-computer interaction and immersive technologies.</p>
+        <p class="bio">Below is a list of some projects I've done for summer internships,
+        coursework, research, and fun.
+        </p>
+        <!--<h1 style="margin-top:40px; color: #373B44">These are some of my projects.</h1>
+        <h1 style="margin-top:40px; color: #373B44"><a href="#about" class="hovers" style="padding: 10px; background-color: #FE4B74; box-shadow: 10px 10px 0px #888888; color: white;">About</a>  <a href="#projects" style="color:#004358;">Projects</a>  <a href="#contact" style="color:#FE4B74;">Contact</a></h1>-->
+     </div>
+    </section>
+    
+    <!--
+    <section id="about" style="background-color: #BEDB39;">  
+      <div class="content">
+        <h1>I go to <a href="http://caniuse.com/#feat=viewport-units">Northwestern University.</a></h1>
+        <h1>I was born and raised in <a href="http://caniuse.com/#feat=viewport-units">Chicago.</a></h1>
+        <h1>I study <a href="http://caniuse.com/#feat=viewport-units">cognitive science</a> and <a href="http://caniuse.com/#feat=viewport-units">computer science.</a></h1>
+     </div>
+    </section>
+    
+    <section id="projects" style="background-color: #004358;">  
+      <div class="content">
+        <h1>Here are some of the things I've done.</h1>
+     </div>
+    </section>
+    -->
+    
+    <section class="marathon">  
+      <div class="content" id="outercontent">
+        <div class="innercontent">
+          <h1 id="marathonHead" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#marathonModal"><b>Marathon Data Visualization System</b></h1>
+          <p class="tagline">A dashboard display for critical runner and medical data that aids decision-making during large events</p>
+          <p class="sub">SUMMER 2017 AND ONGOING | DEPARTMENT OF INDUSTRIAL ENGINEERING</p>
+          <button class="butn" id="marathon-btn" data-toggle="modal" data-target="#marathonModal">Learn more</button>
+        </div>
+     </div>
+    </section>
+    
+    <div id="marathonModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2 >The Data Visualization System (DVS) is used by race officials at multiple events, including the Chicago Marathon,
+            the second largest marathon in the world.</h2>
+            <p>I am part of a small group of students at Northwestern that develops and deploys the DVS. We work under the
+            direction of Professor Karen Smilowitz in the Department of Industrial Engineering. Currently, the system is in use at
+            four annual events: the Bank of America Chicago Marathon, Chevron Houston Marathon, Aramco Half Marathon, and Bank of America Shamrock Shuffle.
+            The DVS tracks the progress and medical information of thousands of runners, keeping race officials stationed
+            at forward command tents informed about the status and well-being of participants.</p>
+            <p>I joined the team during the spring of 2017, and I spent my summer overhauling the DVS. We transitioned the DVS
+            to a responsive, mobile-friendly web app deployed on the LAMP stack. My biggest contribution was rewriting and
+            redesigning the dynamic course map implementation that displays runner density and GPS locations of pacers.
+            I built the map using the Mapbox GL JS API.</p>
+            <p>We deploy the DVS at the Chicago Marathon in October, the Houston Marathon and Half Marathon in January, and the Shamrock Shuffle in March. We are also pursuing expansion and eventual commercialization of the DVS.</p>
+            <p>Our system was awarded the prestigious INFORMS Innovative Applications in Analytics Award in April 2018.
+            We competed against the other finalists at the INFORMS Business Analytics Conference in Baltimore, including IBM, Macy's, BNSF, and Schneider.</p>
+            <h2>In the News</h2>
+            <ul>
+              <li><a id="news" target="_blank" href="http://meetings2.informs.org/wordpress/analytics2018/2018/01/19/northwestern-university-safe-situational-awareness-for-events-a-data-visualization-system/"><b>2018 INFORMS Business Analytics Conference:</b> SAFE (Situational Awareness for Events): A Data Visualization System</a></li>
+              <li><a id="news" target="_blank" href="http://www.mccormick.northwestern.edu/news/articles/2017/10/engineers-optimize-marathon-volunteers.html"><b>Northwestern:</b> Engineers Optimize Marathon Volunteers</a></li>
+              <li><a target="_blank" href="http://www.newsweek.com/2016/10/14/chicago-marathon-data-visualization-technology-506126.html"><b>Newsweek:</b> How the Chicago Marathon Will Keep Track of 1.7 Million People</a></li>
+              <li><a target="_blank" href="https://issuu.com/11blabmagg45/docs/8scsdcsc/26"><b>Runner's World:</b> Make Your Race Fantastic</a></li>
+              <li><a target="_blank" href="http://www.chicagotribune.com/bluesky/originals/ct-marathon-data-simulation-bsi-1009-story.html"><b>Chicago Tribune:</b> How a real-time simulation will keep the Chicago Marathon on track</a></li>
+              <li><a target="_blank" href="http://www.mychicagoathlete.com/data-and-the-bank-of-america-chicago-marathon/"><b>Chicago Athlete Magazine:</b> Data and the Bank of America Chicago Marathon</a></li>
+              <li><b>Northwestern Engineering Magazine:</b> (That's me in the bright red, looking very tired!)</li>
+            </ul>
+            <img src="Magazine.jpg" width="100%"></img>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">Close</button></button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <section class="ocean"> 
+      <div class="content" id="outercontent">
+        <div class="innercontent">
+          <h1 id="oceanHead" data-toggle="modal" data-target="#oceanModal"><b>You Are the Ocean</b></h1>
+          <p class="tagline">A brain-computer interface art installation, selected for national and international exhibitions</p>
+          <p class="sub"><b>WINTER&ndash;SUMMER 2017 | DEPARTMENT OF RADIO, TV, AND FILM</b></p>
+          <button class="butn" id="ocean-btn" data-toggle="modal" data-target="#oceanModal">Learn more</button>
+        </div>
+     </div>
+     <div class="videoContainer">
+       <video class="thevideo" loop preload="none">
+          <source src="YATO Web.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+       </video>
+     </div>
+    </section>
+    
+    <div id="oceanModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2>"You Are the Ocean" is an interactive art installation where the participant's brain waves
+            control a projected ocean simulation. It began traveling to national and international art exhibitions in 2018.</h2>
+            <p>This project was a collaboration with Ozge Samanci, an interactive media artist and Northwestern Professor in the Radio, Television, and Film Department.
+            In early 2017, we started the project based on an idea she had for a new
+            interactive piece that would symbolize humanity's connection to nature.</p>
+            <p>I was in charge of all programming and implementation for the installation. I built the project using
+            the Unity Game Engine, C#, and the Neurosky Mindwave headset, with funding from the Undergraduate Research Assistant Program. In August 2017,
+            we filmed the demo video for the final product, which you can watch below.</p>
+            <div class="videoWrapper">
+              <iframe src="https://player.vimeo.com/video/232792092?title=0&byline=0&portrait=0" width="560" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <p>Now that the project is complete, 
+            it is beginning to travel to art exhibitions both nationally and internationally. It has also been featured in the August 2018 issue of <a id="news" target="_blank" href="https://www.leonardo.info/leonardo"><b>Leonardo</b></a>, a journal 
+            at the intersection of the arts, science, and technology, published by The MIT Press.</p>
+            <p>Read our Leonardo article <a id="news" target="_blank" href="http://delivery.acm.org/10.1145/3210000/3205916/p442-samanci.pdf?ip=67.162.60.87&id=3205916&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1535998701_7f8488486dbdb52658450b45d60b1062"><b>here</b></a>.</p>
+            <h2>Exhibitions</h2>
+            <ul>
+              <li><a id="news" target="_blank" href="https://www.wonderspaces.com"><b>Wonderspaces (upcoming)</b> San Diego, CA; Phoenix, AZ; Austin, TX; Miami, FL</a></li>
+              <li><a id="news" target="_blank" href="http://www.plexusprojects.org"><b>Plexus Projects (upcoming)</b> Brooklyn, NY</a></li>
+              <li><a id="news" target="_blank" href="https://www.brain-mind.org/stanford"><b>BrainMind Summit 2018</b> Stanford University</a></li>
+              <li><a id="news" target="_blank" href="https://s2018.siggraph.org/conference/conference-overview/art-gallery/"><b>SIGGRAPH 2018 Art Gallery</b> Vancouver, BC</a></li>
+              <li><a id="news" target="_blank" href="https://file.org.br/file_sp_2018/"><b>FILE 2018 (Electronic Language International Festival)</b> S&#227;o Paulo, BR</a></li>
+              <li><a target="_blank" href="https://currentsnewmedia.org/work/you-are-the-ocean/"><b>Currents New Media 2018</b> Santa Fe, NM</a></li>
+              <li><a target="_blank" href="https://commfest.northwestern.edu"><b>CommFest 2018</b> Evanston, IL</a></li>
+              <li>Future locations to be announced</li>
+            </ul>
+            <h2>In the News</h2>
+            <ul>
+              <li><a id="news" target="_blank" href="http://www.santafenewmexican.com/pasatiempo/art/making-waves-ozge-samanci-and-gabriel-caniglia-s-you-are/article_2a5546ec-e467-5dae-a64e-1694a2671926.html"><b>Pasatiempo | Santa Fe New Mexican:</b> Making waves: Ozge Samanci and Gabriel Caniglia's "You Are the Ocean"</a></li>
+              <li><a id="news" target="_blank" href="https://www1.folha.uol.com.br/ilustrada/2018/07/em-festival-de-arte-eletronica-visitante-pode-controlar-oceano-e-esticar-corpos-nus.shtml"><b>Folha de S. Paulo:</b> [Portuguese] Em festival de arte eletrônica, visitante pode controlar oceano e esticar corpos nus</a></li>
+              <li><a target="_blank" href="https://globoplay.globo.com/v/6852610/"><b>SP1 News:</b> [Portuguese] Festival reúne obras de arte que provocam o corpo em SP</a></li>
+              <li><a target="_blank" href="http://radiogeekbr.com.br/file-sp-2018/"><b>Rádio Geek BR:</b> [Portuguese] FILE SP 2018</a></li>
+            </ul>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">Close</button></button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <section class="makerspace">  
+      <div class="content" id="outercontent">
+        <div class="innercontent">
+          <h1 id="makerspaceHead" data-toggle="modal" data-target="#makerspaceModal"><b>The Garage:<br>Makerspace and VR Lab</b></h1>
+          <p class="tagline">A dedicated place for Northwestern hardware and VR startups to prototype and build</p>
+          <p class="sub"><b>SUMMER 2016 AND ONGOING | THE GARAGE AT NORTHWESTERN</b></p>
+          <button class="butn" id="makerspace-btn" data-toggle="modal" data-target="#makerspaceModal">Learn more</button>
+        </div>
+     </div>
+    </section>
+    
+    <div id="makerspaceModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2>The Makerspace, located in Northwestern's center for 
+            entrepreneurship and innovation, is a ~2,250 sq ft space that I  designed, built, and maintain.</h2>
+            <p>I began working at The Garage when it first opened, during the fall of 2015. 
+            As a "tech aide," I would help manage the growing collection of cutting-edge tech contained within the space. Throughout my
+            first year there, devices like 3D printers and CNC mills started cluttering the entryway of The Garage, because there
+            was no central location for maker equipment. During the summer of 2016, I had the unique opportunity to convert one of the
+            classrooms into a Makerspace as a full-time internship.</p>
+            <img src="prototyping.jpg" width="100%"></img>
+            <p>About two thirds of the space is the Prototyping Lab, dedicated to The Garage's large collection of maker equipment.
+            Along with the IT Manager at The Garage, I designed the layout of the space, housing 3D printers, CNC mills, woodworking and electronics
+            equipment, and space for future equipment.</p>
+            <img src="mixedreality.jpg" width="100%"></img>
+            <p>The Garage also had a growing collection of VR and AR headsets, but no dedicated place to use them.
+            I designed the VR Lab to fill the other third of the space. It contains a dedicated setup with powerful gaming computers to run the latest VR
+            headsets, as well as green walls and flooring for photography, videography, and "mixed reality" recordings of people in VR experiences. This type
+            of recording can be seen in the photo above: on the large screen, people can see exactly what the person in VR is doing from a third-person perspective.</p>
+            <p>I still work at The Garage during the school year, continuously updating and maintaining the Makerspace. The space gets use every day among
+            the several hardware startups that are currently incubating at The Garage, as well as the multiple startups that are working on VR/AR development.
+            It's also open to the entire Northwestern community for demos of cutting-edge VR/AR tech, such as the Oculus Rift and Microsoft HoloLens.</p>
+            <img src="garage.jpg" width="100%"></img>
+            <p>I also wrote the pages on The Garage website that detail all of the equipment contained in the <a target="_blank" href="https://thegarage.northwestern.edu/resources/prototyping-lab/"><b>Prototyping Lab</b></a> and <a target="_blank" href="https://thegarage.northwestern.edu/resources/ar-vr-lab/"><b>VR/AR Lab</b></a>, as
+            well as The Garage help desk articles. Check out the pages to see detailed lists of all the equipment contained in the space. I still love working
+            at The Garage, not only because I get to see a space I created in constant use, but also because I love using the space myself! I'm a huge
+            VR geek, as you can tell from the above photo. I am often the one that convinces The Garage what latest high-tech gadget to buy next.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">Close</button></button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <section class="algorithms">  
+      <div class="content" id="outercontent">
+        <div class="innercontent">
+          <h1 id="algorithmsHead" data-toggle="modal" data-target="#algorithmsModal"><b>Tackling Fake News on Facebook</b></h1>
+          <p class="tagline">A user interface study for a fake news detection system on Facebook</p>
+          <p class="sub"><b>SPRING 2017 | EECS 395: ALGORITHMS AND SOCIETY</b></p>
+          <button class="butn" id="algorithms-btn" data-toggle="modal" data-target="#algorithmsModal">Learn more</button>
+        </div>
+     </div>
+    </section>
+    
+    <div id="algorithmsModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2>The Facebook News Feed has a fake news problem. This project attempts to address it from a user interface perspective.</h2>
+            <p>Algorithms and Society was a highly interdisciplinary seminar class taught by Professor Brent Hecht. Each week, we covered
+            one of many alarming impacts algorithms have on society, from the sharing economy to the filter bubble. As part of a quarter-long group project,
+            we were tasked with attempting to ameliorate one of the problems discussed in class. My group took a stab at tackling a massive one: fake news.</p>
+            <p>Building off of existing research on algorithmic methods of fake news detection, we addressed user interface concerns for what a fake news detection tool
+            would look like. We devised an interface motivated by relevant HCI and cognitive psychology research, ran user testing experiments on our prototypes, and analyzed our findings
+            in a final paper.</p>
+            <p><a target="_blank" href="TacklingFakeNews.pdf"><b>Read the final paper here.</b></a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">Close</button></button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <section class="data">  
+      <div class="content" id="outercontent">
+        <div class="innercontent">
+          <h1 id="dataHead" data-toggle="modal" data-target="#dataModal"><b>Data Visualization in Virtual Reality</b></h1>
+          <p class="tagline">An exploration of data visualization possibilities for immersive environments</p>
+          <p class="sub"><b>WINTER 2017 | KNIGHT LAB STUDIO</b></p>
+          <button class="butn" id="data-btn" data-toggle="modal" data-target="#dataModal">Learn more</button>
+        </div>
+     </div>
+    </section>
+    
+    <div id="dataModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2>At Northwestern's lab for media innovation, I explored the immense possibilities and best practices for data visualizations in virtual reality.</h2>
+            <p>Every quarter the Knight Lab runs various studio projects. During the winter quarter of 2017, I joined a group of three other students to
+            explore the fledgling space of VR data visualizations. We spent our quarter researching best practices of 2D visualizations and virtual reality, and designing
+             low-fidelity prototypes using tools like Tilt Brush. We then compiled our findings into an interactive website, complete with a comprehensive list
+             of existing resources for data visualization in VR.</p>
+             <p>We found that the added dimensionality, immersion, and interaction afforded by VR makes it a wonderful platform for a new generation of data 
+             visualizations that can grant the user unprecedented perspective. At the same time, many data visualizations do not translate well into VR, and
+             care must be taken to create an optimal VR experience.</p>
+             <p><a target="_blank" href="https://studio.knightlab.com/results/exploring-data-visualization-in-vr/uncharted-territory-datavis-vr/"><b>Check out our complete findings on the Knight Lab website.</b></a> 
+             You can even view our prototypes in VR using a mobile VR headset like Google Cardboard.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">Close</button></button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <section class="catnip">  
+      <div class="content" id="outercontent">
+        <div class="innercontent">
+          <h1 id="catnipHead" data-toggle="modal" data-target="#catnipModal"><b>Catnip</b></h1>
+          <p class="tagline">A Northwestern-tailored app for improving time management</p>
+          <p class="sub"><b>FALL 2016&ndash;SPRING 2017 | SEGAL DESIGN INSTITUTE</b></p>
+          <button class="butn" id="catnip-btn" data-toggle="modal" data-target="#catnipModal">Learn more</button>
+        </div>
+     </div>
+    </section>
+    
+    <div id="catnipModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2>Catnip is a mobile app developed out of a year-long project dedicated to helping Northwestern students manage their time.</h2>
+            <p>It began as a design project between me and two other students. We went through countless iterations and user testing trials to create a solution
+            that would benefit as many students as possible. Initially known as Project Catnip (Go 'Cats!), by the end of the quarter we called it NU 101.</p>
+            <p>However, the idea was popular enough that it was taken up by upper-level design students as a two-quarter project to further refine and implement our
+            ideas. While out final prototype was purely visual and nonfunctional, this group of four students was tasked with bringing in a level of functionality. 
+            My original group and I acted as clients for the new group, offering continuous feedback and guidance to meet the original goals of our project. By the end 
+            of their project period, the app was capable of some of our original goals, such as scraping from Canvas, our class management site, as well as 
+            Caesar, our general Northwestern portal. They also created the professional rendering of the app that is displayed here.</p>
+            <p>The main features of the app are a priority-based calendar, automated entry system, and school-based messaging. Our trials showed students 
+            benefitted from a calendar that didn't just show time allocated to tasks, but also priority given to those tasks. Our priority calendar was
+             also easy-to-use because it could scrape from existing calendars and Northwestern sites. The messaging feature allowed students to connect with 
+             peers in their classes or student organizations. We also devised a rollout strategy that would integrate with the freshman orientation program to 
+             encourage high adoption rates for the app.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">Close</button></button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <section class="elks">  
+      <div class="content" id="outercontent">
+        <div class="innercontent">
+          <h1 id="elksHead" data-toggle="modal" data-target="#elksModal"><b>Elks National Memorial</b></h1>
+          <p class="tagline">A case study of Chicago's intersection with classical antiquity</p>
+          <p class="sub"><b>FALL 2017 | CLASSICS 390: ANCIENT ROME IN CHICAGO</b></p>
+          <button class="butn" id="elks-btn" data-toggle="modal" data-target="#elksModal">Learn more</button>
+        </div>
+     </div>
+    </section>
+    
+    <div id="elksModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2>This project, which covers a blend of architecture, classics, and Chicago history, is part of a larger exploration of Ancient Rome's influences on Chicago.</h2>
+            <p>The Elks National Memorial is a war memorial built for the Benevolent and Protective Order of Elks, one of America's largest fraternal organizations. 
+            It stands in Lincoln Park, on Chicago's north side. Over several months, I researched and filmed the building in an effort to explore its connection
+            with Chicago and classical antiquity. It is a building that is obviously inspired by ancient Rome, especially in its resemblance to the Pantheon. But
+             more interestingly, it also borrows greatly from American ideals and symbology. Overall, I found the Elks Memorial to be less of a Chicagoan
+             building, and more of a national one. These findings are summarized in the video I created below.</p>
+            <div class="videoWrapper">
+              <iframe width="560" height="349" src="https://www.youtube.com/embed/GGR8gRPL92k?rel=0&amp;showinfo=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div>
+            <p>This video exists as part of a larger "walking tour" documenting all the buildings of Chicago that are in dialogue with ancient Rome. 
+            <a href="https://s3.amazonaws.com/uploads.knightlab.com/storymapjs/783a09de8300e1b5f74b99b99acb08ef/ancient-rome-in-chicago/index.html"><b>View the entire walking tour here.</b></a></p>
+            <p>I also compiled all of my research on the Elks National Memorial into a mini-site. To learn more about the building, <a href="https://canvas.northwestern.edu/eportfolios/895"><b>check out the site here.</b></a></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">Close</button></button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <section class="arcade">  
+      <div class="content" id="outercontent">
+        <div class="innercontent">
+          <h1 id="arcadeHead" data-toggle="modal" data-target="#arcadeModal"><b>Mortal Kombat II</b></h1>
+          <p class="tagline">An arcade cabinet restoration and retrofit</p>
+          <p class="sub"><b>SPRING 2017 AND ONGOING | THE GARAGE AT NORTHWESTERN</b></p>
+          <button class="butn" id="arcade-btn" data-toggle="modal" data-target="#arcadeModal">Learn more</button>
+        </div>
+     </div>
+    </section>
+    
+    <div id="arcadeModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2>I found this arcade cabinet in a dumpster, brought it back to life, and now it can play just about any arcade game.</h2>
+            <p>One rainy day during the fall of 2016, I walked by the dumpsters outside of Northwestern's fraternities, and saw this beautiful Mortal Kombat II
+            arcade cabinet just sitting there. I couldn't imagine why someone would throw it out, until I got closer and realized it was missing its entire
+            controls panel, with severed wires dangling from the opening. I got a group together to rescue it from the rain. We talked about restoring it and making
+            it the centerpiece of our dorm, but classes and a lack of funds for new parts got in the way.</p>
+            <p>In early 2017, I asked the executive director of The Garage if I could bring it there to work on it. Not only did she accept, but she also
+            offered to buy the necessary parts for its restoration. I started by simply replacing the frayed power cable, plugging it in, and lo and behold - it 
+            worked again! Throughout the spring of 2017, I continued to restore it, assembling a new controls panel and rewiring all the parts. By the end of 
+            the spring, it worked flawlessly, as if the panel had never been missing.</p>
+            <p>But I wanted it to do more. I ordered a Raspberry Pi and conversion board to hook up the buttons, joysticks, and original CRT with the Pi, and
+            after some software fiddling, I had a versatile arcade cabinet that could play everything from Pac Man to Galaga thanks to emulators. While I had it 
+            working roughly by the end of spring, I'm continuing to refine the software to make the user experience optimal. Eventually, I should be able to 
+            switch between the original Mortal Kombat II board and the Pi with a press of a button.</p>
+            <p>Today, it lives in the VR Lab of The Garage, offering the quintessential arcade cabinet experience that every co-working space should have.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">Close</button></button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <!--
+    <section class="deception">  
+      <div class="content">
+        <h1>Deception Detection</h1>
+        <p style="margin-top:20px;">A computational linguistics tool for detecting lies</p>
+     </div>
+    </section>
+    -->
+    
+    <section id="contact" style="background-color: black;">  
+      <div class="content" id="outercontent">
+        <div class="innercontent">
+          <!--<h1 id="titleText">Learn more <span data-toggle="modal" data-target="#aboutModal" id="endBold"><b>about me</b></span>.</h1>-->
+          <h1 id="titleText">Check out my <a target="_blank" href="https://www.linkedin.com/in/gcaniglia/"><b>LinkedIn</b></a>.</h1>
+          <h1 id="titleText">Take a look at my <a target="_blank" href="ResumeGabrielCaniglia.pdf"><b>resume</b></a>.</h1>
+          <h1 id="titleText">Shoot me an <a href="mailto:gabe@gcan.co"><b>email</b></a>.</h1>
+        </div>
+     </div>
+    </section>
+    
+    <div id="aboutModal" class="modal" role="dialog">
+      <div class="modal-dialog modal-lg">
+    
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <h2>I was born and raised in Chicago, and I have fierce pride for my city.</h2>
+            <h2>Some of my current passions are VR, smartphone photography, and architecture.</h2>
+            <h2>I built this website from scratch during fall 2017. It's still a work in progress.</h2>
+            <h2>More coming soon</h2>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="close" data-dismiss="modal">Close</button></button>
+          </div>
+        </div>
+    
+      </div>
+    </div>
+    
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="site.js"></script>
+    <script src="particles.js"></script>
+<script src="app.js"></script>
+</body>
