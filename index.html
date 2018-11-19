@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head><meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
-  <link href="https://fonts.googleapis.com/css?family=Oswald|Shrikhand|Alfa+Slab+One|Archivo+Black|Abril+Fatface|Anton|Bree+Serif" rel="stylesheet">
-  
+  <link href="https://fonts.googleapis.com/css?family=Overpass:200,300,400,400i,700,900" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -10,73 +9,68 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" type="image/jpg" href="GCAN.png">
+  <link rel="stylesheet" href="animate.min.css">
   <title>Gabriel Caniglia</title>
 </head>
 <body>
     <section class="intro">
-      <div id="particles-js"></div>
       <div class="first">
-        <h1 id="titleText">Hi, I'm <b>Gabriel Caniglia</b>.</h1>
-        <p class="bio" style="margin-top: 50px;">I study cognitive science, computer science, and design at Northwestern University.
-        My interests lie broadly in human-computer interaction and immersive technologies.</p>
-        <p class="bio">Below is a list of some projects I've done for summer internships,
-        coursework, research, and fun.
-        </p>
-        <!--<h1 style="margin-top:40px; color: #373B44">These are some of my projects.</h1>
-        <h1 style="margin-top:40px; color: #373B44"><a href="#about" class="hovers" style="padding: 10px; background-color: #FE4B74; box-shadow: 10px 10px 0px #888888; color: white;">About</a>  <a href="#projects" style="color:#004358;">Projects</a>  <a href="#contact" style="color:#FE4B74;">Contact</a></h1>-->
+        <h1>Hi, I'm Gabriel Caniglia</h1>
+        <div class="tagline" style="margin-top: 50px;">I study computer science, cognitive science, and design at Northwestern University. My work focuses on user experience and immersive tech.</p>
+        <div class="tagline">Want to know more? Shoot me an <a href="mailto:gabe@gcan.co">email</a>, check out my <a target="_blank" href="https://www.linkedin.com/in/gcaniglia/">LinkedIn</a>, or take a look at my <a target="_blank" href="ResumeGabrielCaniglia.pdf">resume</a>.</p>
      </div>
     </section>
     
-    <!--
-    <section id="about" style="background-color: #BEDB39;">  
-      <div class="content">
-        <h1>I go to <a href="http://caniuse.com/#feat=viewport-units">Northwestern University.</a></h1>
-        <h1>I was born and raised in <a href="http://caniuse.com/#feat=viewport-units">Chicago.</a></h1>
-        <h1>I study <a href="http://caniuse.com/#feat=viewport-units">cognitive science</a> and <a href="http://caniuse.com/#feat=viewport-units">computer science.</a></h1>
-     </div>
+    <section>
+	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#marathonModal">
+			<video class="homeimage" autoplay loop muted poster="marathon.jpg">
+				<source src="Marathon Mockup 1080.mp4" type="video/mp4">
+			</video>
+			<h1>Marathon Data Viz System</h1>
+			<div class="tagline">Award-winning public health and safety dashboard</div>
+	    </div>
     </section>
     
-    <section id="projects" style="background-color: #004358;">  
-      <div class="content">
-        <h1>Here are some of the things I've done.</h1>
-     </div>
-    </section>
-    -->
-    
-    <section class="marathon">  
-      <div class="content" id="outercontent">
-        <div class="innercontent">
-          <h1 id="marathonHead" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#marathonModal"><b>Marathon Data Visualization System</b></h1>
-          <p class="tagline">An award-winning dashboard display for critical runner and medical data that aids decision-making during large events</p>
-          <p class="sub">SUMMER 2017 AND ONGOING | DEPARTMENT OF INDUSTRIAL ENGINEERING</p>
-          <button class="butn" id="marathon-btn" data-toggle="modal" data-target="#marathonModal">Learn more</button>
-        </div>
-     </div>
-    </section>
-    
-    <div id="marathonModal" class="modal" role="dialog">
+    <div id="marathonModal" class="modal fade-scale" role="dialog">
+      <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
       <div class="modal-dialog modal-lg">
-    
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-          </div>
+        	<div class="videoWrapper">
+              <iframe src="https://player.vimeo.com/video/301526002?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            </div>
+            <h6 class="caption" id="headercaption">Running a marathon in 60 seconds: a timelapse of the system in action at the 2017 Chicago Marathon.</h6>
+            <hr class="captionline">
           <div class="modal-body">
-            <h2 >The Data Visualization System (DVS) is used by race officials at multiple events, including the Chicago Marathon,
-            the second largest marathon in the world.</h2>
-            <p>I am part of a small group of students at Northwestern that develops and deploys the DVS. We work under the
-            direction of Professor Karen Smilowitz in the Department of Industrial Engineering. Currently, the system is in use at
-            four annual events: the Bank of America Chicago Marathon, Chevron Houston Marathon, Aramco Half Marathon, and Bank of America Shamrock Shuffle.
-            The DVS tracks the progress and medical information of thousands of runners, keeping race officials stationed
-            at forward command tents informed about the status and well-being of participants.</p>
-            <p>I joined the team during the spring of 2017, and I spent my summer overhauling the DVS. We transitioned the DVS
-            to a responsive, mobile-friendly web app deployed on the LAMP stack. My biggest contribution was rewriting and
-            redesigning the dynamic course map implementation that displays runner density and GPS locations of pacers.
-            I built the map using the Mapbox GL JS API.</p>
-            <p>We deploy the DVS at the Chicago Marathon in October, the Houston Marathon and Half Marathon in January, and the Shamrock Shuffle in March. We are also pursuing expansion and eventual commercialization of the DVS.</p>
+          	<h1>Marathon Data Viz System</h1>
+          	<hr class="titleunderline">
+            <div class="tagline">The Data Visualization System (DVS) is used by race officials at events such as the Chicago Marathon,
+            the second largest marathon in the world.</div>
+            <h3>Keeping Runners Safe</h3>
+            <p>I am part of a small group of students at Northwestern that develops and deploys the DVS. The DVS tracks the progress and medical information of thousands of runners, keeping race officials stationed at forward command tents informed about the status and well-being of participants.</p>
+            <img src="Devices2.jpg" width="100%"></img>
+            <h6 class="caption">The system works across phones, tablets, laptops, and the large monitors in forward command.</h6>
+            <hr class="captionline">
+            <p>On race day, it’s used by medical professionals, public safety officials, federal government agencies, and race organizers. It allows them to monitor race progress and safety on their phones, tablets, laptops, and on large displays in forward command.</p>
+            <img src="FC Photo.jpg" width="100%"></img>
+            <h6 class="caption">Our system is part of a massive wall of displays in forward command, shown here at the 2018 Chicago Marathon (sensitive info blurred).</h6>
+            <hr class="captionline">
+            <h3>Where it's used</h3>
+            <p>The system is currently in use across four events, keeping over 100,000 runners from around the world safe every year:</p>
+            <p style="border-left: 4px solid white; padding-left: 10px;"><b>Bank of America Chicago Marathon</b> (45,000+ runners)<br>
+            <b>Chevron Houston Marathon</b> (15,000+ runners)<br>
+            <b>Aramco Houston Half Marathon</b> (20,000+ runners)<br>
+            <b>Bank of America Shamrock Shuffle</b> (35,000+ runners)</p>
+            <h3>Developing and deploying the system</h3>
+            <p>During the past two years, I've helped transition the DVS to a responsive, mobile-friendly web app with new features and an optimized design.</p>
+            <p>My biggest contribution was rewriting and redesigning the dynamic course map implementation that displays runner density, medical information, GPS-tracked runners, weather, and more. I built the map using the Mapbox GL JS API.</p>
+            <p>I also spend much of my time on the project facilitating communication between the Northwestern team and race officials. I am on the ground during race days, deploying and operating the live system.</p>
+            <h3>Awards and publications</h3>
             <p>Our system was awarded the prestigious INFORMS Innovative Applications in Analytics Award in April 2018.
             We competed against the other finalists at the INFORMS Business Analytics Conference in Baltimore, including IBM, Macy's, BNSF, and Schneider.</p>
-            <h2>In the News</h2>
+			<img src="Magazine.jpg" width="60%" class="center"></img>
+            <h6 class="caption" id="smallercaptionline">The team (I'm in red) featured in Northwestern Engineering Magazine</h6>
+            <hr class="captionline" id="smallercaptionline">
+            <h3>In the News</h3>
             <ul>
               <li><a id="news" target="_blank" href="http://meetings2.informs.org/wordpress/analytics2018/2018/01/19/northwestern-university-safe-situational-awareness-for-events-a-data-visualization-system/"><b>2018 INFORMS Business Analytics Conference:</b> SAFE (Situational Awareness for Events): A Data Visualization System</a></li>
               <li><a id="news" target="_blank" href="http://www.mccormick.northwestern.edu/news/articles/2017/10/engineers-optimize-marathon-volunteers.html"><b>Northwestern:</b> Engineers Optimize Marathon Volunteers</a></li>
@@ -84,9 +78,7 @@
               <li><a target="_blank" href="https://issuu.com/11blabmagg45/docs/8scsdcsc/26"><b>Runner's World:</b> Make Your Race Fantastic</a></li>
               <li><a target="_blank" href="http://www.chicagotribune.com/bluesky/originals/ct-marathon-data-simulation-bsi-1009-story.html"><b>Chicago Tribune:</b> How a real-time simulation will keep the Chicago Marathon on track</a></li>
               <li><a target="_blank" href="http://www.mychicagoathlete.com/data-and-the-bank-of-america-chicago-marathon/"><b>Chicago Athlete Magazine:</b> Data and the Bank of America Chicago Marathon</a></li>
-              <li><b>Northwestern Engineering Magazine:</b> (That's me in the bright red, looking very tired!)</li>
             </ul>
-            <img src="Magazine.jpg" width="100%"></img>
           </div>
           <div class="modal-footer">
             <button type="button" class="close" data-dismiss="modal">Close</button></button>
@@ -96,24 +88,17 @@
       </div>
     </div>
     
-    <section class="ocean"> 
-      <div class="content" id="outercontent">
-        <div class="innercontent">
-          <h1 id="oceanHead" data-toggle="modal" data-target="#oceanModal"><b>You Are the Ocean</b></h1>
-          <p class="tagline">A brain-computer interface art installation, selected for national and international exhibitions</p>
-          <p class="sub"><b>WINTER&ndash;SUMMER 2017 | DEPARTMENT OF RADIO, TV, AND FILM</b></p>
-          <button class="butn" id="ocean-btn" data-toggle="modal" data-target="#oceanModal">Learn more</button>
-        </div>
-     </div>
-     <div class="videoContainer">
-       <video class="thevideo" loop preload="none">
-          <source src="YATO Web.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-       </video>
-     </div>
+    <section>
+	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#oceanModal">
+			<video class="homeimage" autoplay loop muted poster="ocean.jpg">
+				<source src="YATO Web.mp4" type="video/mp4">
+			</video>
+			<h1>You Are the Ocean</h1>
+			<div class="tagline">Internationally-exhibited interactive art installation</div>
+	    </div>
     </section>
     
-    <div id="oceanModal" class="modal" role="dialog">
+    <div id="oceanModal" class="modal fade-scale" role="dialog">
       <div class="modal-dialog modal-lg">
     
         <div class="modal-content">
@@ -163,19 +148,18 @@
     
       </div>
     </div>
-    
-    <section class="makerspace">  
-      <div class="content" id="outercontent">
-        <div class="innercontent">
-          <h1 id="makerspaceHead" data-toggle="modal" data-target="#makerspaceModal"><b>The Garage:<br>Makerspace & AR/VR Lab</b></h1>
-          <p class="tagline">A dedicated place for Northwestern hardware and AR/VR startups to prototype and build</p>
-          <p class="sub"><b>SUMMER 2016 AND ONGOING | THE GARAGE AT NORTHWESTERN</b></p>
-          <button class="butn" id="makerspace-btn" data-toggle="modal" data-target="#makerspaceModal">Learn more</button>
-        </div>
-     </div>
+
+    <section>
+	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#makerspaceModal">
+			<video class="homeimage" autoplay loop muted poster="makerspace.jpg">
+				
+			</video>
+			<h1>The Garage Makerspace & XR Lab</h1>
+			<div class="tagline">Creating the home for Northwestern hardware and AR/VR startups</div>
+	    </div>
     </section>
     
-    <div id="makerspaceModal" class="modal" role="dialog">
+    <div id="makerspaceModal" class="modal fade-scale" role="dialog">
       <div class="modal-dialog modal-lg">
     
         <div class="modal-content">
@@ -215,19 +199,18 @@
     
       </div>
     </div>
-    
-    <section class="algorithms">  
-      <div class="content" id="outercontent">
-        <div class="innercontent">
-          <h1 id="algorithmsHead" data-toggle="modal" data-target="#algorithmsModal"><b>Tackling Fake News on Facebook</b></h1>
-          <p class="tagline">A user interface study for a fake news detection system on Facebook</p>
-          <p class="sub"><b>SPRING 2017 | EECS 395: ALGORITHMS AND SOCIETY</b></p>
-          <button class="butn" id="algorithms-btn" data-toggle="modal" data-target="#algorithmsModal">Learn more</button>
-        </div>
-     </div>
+
+    <section>
+	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#algorithmsModal">
+			<video class="homeimage" autoplay loop muted poster="algorithms.jpg">
+				
+			</video>
+			<h1>Tackling Fake News</h1>
+			<div class="tagline">User interface study for the Facebook News Feed</div>
+	    </div>
     </section>
     
-    <div id="algorithmsModal" class="modal" role="dialog">
+    <div id="algorithmsModal" class="modal fade-scale" role="dialog">
       <div class="modal-dialog modal-lg">
     
         <div class="modal-content">
@@ -251,19 +234,18 @@
     
       </div>
     </div>
-    
-    <section class="data">  
-      <div class="content" id="outercontent">
-        <div class="innercontent">
-          <h1 id="dataHead" data-toggle="modal" data-target="#dataModal"><b>Data Visualization in Virtual Reality</b></h1>
-          <p class="tagline">An exploration of data visualization possibilities for immersive environments</p>
-          <p class="sub"><b>WINTER 2017 | KNIGHT LAB STUDIO</b></p>
-          <button class="butn" id="data-btn" data-toggle="modal" data-target="#dataModal">Learn more</button>
-        </div>
-     </div>
+
+    <section>
+	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#dataModal">
+			<video class="homeimage" autoplay loop muted poster="data.jpg">
+				
+			</video>
+			<h1>Data Viz in VR</h1>
+			<div class="tagline">Exploring data visualization in immersive environments</div>
+	    </div>
     </section>
     
-    <div id="dataModal" class="modal" role="dialog">
+    <div id="dataModal" class="modal fade-scale" role="dialog">
       <div class="modal-dialog modal-lg">
     
         <div class="modal-content">
@@ -289,19 +271,18 @@
     
       </div>
     </div>
-    
-    <section class="catnip">  
-      <div class="content" id="outercontent">
-        <div class="innercontent">
-          <h1 id="catnipHead" data-toggle="modal" data-target="#catnipModal"><b>Catnip</b></h1>
-          <p class="tagline">A Northwestern-tailored app for improving time management</p>
-          <p class="sub"><b>FALL 2016&ndash;SPRING 2017 | SEGAL DESIGN INSTITUTE</b></p>
-          <button class="butn" id="catnip-btn" data-toggle="modal" data-target="#catnipModal">Learn more</button>
-        </div>
-     </div>
+
+    <section>
+	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#catnipModal">
+			<video class="homeimage" autoplay loop muted poster="catnip.jpg">
+				
+			</video>
+			<h1>Catnip</h1>
+			<div class="tagline">Northwestern-tailored time management app</div>
+	    </div>
     </section>
     
-    <div id="catnipModal" class="modal" role="dialog">
+    <div id="catnipModal" class="modal fade-scale" role="dialog">
       <div class="modal-dialog modal-lg">
     
         <div class="modal-content">
@@ -331,12 +312,12 @@
       </div>
     </div>
     
+    <!--
     <section class="elks">  
       <div class="content" id="outercontent">
         <div class="innercontent">
           <h1 id="elksHead" data-toggle="modal" data-target="#elksModal"><b>Elks National Memorial</b></h1>
           <p class="tagline">A case study of Chicago's intersection with classical antiquity</p>
-          <p class="sub"><b>FALL 2017 | CLASSICS 390: ANCIENT ROME IN CHICAGO</b></p>
           <button class="butn" id="elks-btn" data-toggle="modal" data-target="#elksModal">Learn more</button>
         </div>
      </div>
@@ -370,21 +351,20 @@
     
       </div>
     </div>
-    
-    <section class="arcade">  
-      <div class="content" id="outercontent">
-        <div class="innercontent">
-          <h1 id="arcadeHead" data-toggle="modal" data-target="#arcadeModal"><b>Mortal Kombat II</b></h1>
-          <p class="tagline">An arcade cabinet restoration and retrofit</p>
-          <p class="sub"><b>SPRING 2017 AND ONGOING | THE GARAGE AT NORTHWESTERN</b></p>
-          <button class="butn" id="arcade-btn" data-toggle="modal" data-target="#arcadeModal">Learn more</button>
-        </div>
-     </div>
+	-->
+
+    <section style="margin-bottom: 10%;">
+	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#arcadeModal">
+			<video class="homeimage" autoplay loop muted poster="arcade.jpg">
+				
+			</video>
+			<h1>Mortal Kombat II</h1>
+			<div class="tagline">Arcade cabinet restoration and retrofit</div>
+	    </div>
     </section>
     
-    <div id="arcadeModal" class="modal" role="dialog">
+    <div id="arcadeModal" class="modal fade-scale" role="dialog">
       <div class="modal-dialog modal-lg">
-    
         <div class="modal-content">
           <div class="modal-header">
             <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
@@ -421,43 +401,17 @@
      </div>
     </section>
     -->
-    
-    <section id="contact" style="background-color: black;">  
-      <div class="content" id="outercontent">
-        <div class="innercontent">
-          <!--<h1 id="titleText">Learn more <span data-toggle="modal" data-target="#aboutModal" id="endBold"><b>about me</b></span>.</h1>-->
-          <h1 id="titleText">Check out my <a target="_blank" href="https://www.linkedin.com/in/gcaniglia/"><b>LinkedIn</b></a>.</h1>
-          <h1 id="titleText">Take a look at my <a target="_blank" href="ResumeGabrielCaniglia.pdf"><b>resume</b></a>.</h1>
-          <h1 id="titleText">Shoot me an <a href="mailto:gabe@gcan.co"><b>email</b></a>.</h1>
-        </div>
+
+    <section style="margin-bottom: 2%; height:100%;">
+      <div>
+      	<h3 id="contacttitle">CONTACT</h3>
+        <div class="contactlinks"><a href="mailto:gabe@gcan.co">Email</a><br><a target="_blank" href="https://www.linkedin.com/in/gcaniglia/">LinkedIn</a><br><a target="_blank" href="ResumeGabrielCaniglia.pdf">Resume</a></div>
+        <div class="contactlinks2"><br><br>&copy; Gabriel Caniglia 2018</div>
      </div>
     </section>
-    
-    <div id="aboutModal" class="modal" role="dialog">
-      <div class="modal-dialog modal-lg">
-    
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h2>I was born and raised in Chicago, and I have fierce pride for my city.</h2>
-            <h2>Some of my current passions are VR, smartphone photography, and architecture.</h2>
-            <h2>I built this website from scratch during fall 2017. It's still a work in progress.</h2>
-            <h2>More coming soon</h2>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="close" data-dismiss="modal">Close</button></button>
-          </div>
-        </div>
-    
-      </div>
-    </div>
     
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="site.js"></script>
-    <script src="particles.js"></script>
-<script src="app.js"></script>
 </body>
 </html>

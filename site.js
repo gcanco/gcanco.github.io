@@ -13,36 +13,43 @@ $(function() {
       $('h2').css('font-size', '2em');
       $('p').css('font-size', '1.3em');
       $('.sub').css('font-size', '.9em');
-      $('.butn').css('font-size', '1.0em');
+      //$('.butn').css('font-size', '1.0em');
       $('h1').css('font-size', '2.8em');
   }
 });
 
+$(document).ready(function() {
+  var modal = "#marathonModal"
+  if(window.location.href.indexOf(modal) != -1) {
+    $(modal).modal('show');
+  }
+
+});
+
+// create hover effect on homepage image when hovering over the headline or tagline
 $(function() {
-  $('#marathonHead').hover(function() {
-    $('.marathon').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,0)');
-    $('.tagline').css('opacity', textOpacity + '0.2');
-    $('.sub').css('opacity', textOpacity + '0.2');
-    $('#marathon-btn').css('visibility', 'visible');
+  $('.inner').hover(function() {
+    $(this).find('.homeimage').css('box-shadow', '0px 0px 20px 0 rgba(0, 0, 0, 0.8), 0px 0px 20px 0 rgba(0, 0, 0, 0.8)');
+    $(this).find('.homeimage').css('transform', 'scale(1.01, 1.01)');
   }, function() {
-    // on mouseout, reset the background colour
-    $('.marathon').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,.6)');
-    $('.tagline').css('opacity', '1');
-    $('.sub').css('opacity', '1');
+    $(this).find('.homeimage').css('transform', 'scale(1.0, 1.0)');
+    $(this).find('.homeimage').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5)');
   });
 });
 
+/*
 $(function() {
   $('#oceanHead').hover(function() {
-    $('.ocean').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,0)');
+    //$('.ocean').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,0)');
     $('.tagline').css('opacity', textOpacity);
     $('.sub').css('opacity', textOpacity);
     $('video').get(0).play();
     $('video').css('opacity', '1.0');
-    $('#ocean-btn').css('visibility', 'visible');
+    $('video').css('border-radius', '25px');
+    //$('#ocean-btn').css('visibility', 'visible');
   }, function() {
     // on mouseout, reset the background colour
-    $('.ocean').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,.2)');
+    //$('.ocean').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,.2)');
     $('.tagline').css('opacity', '1');
     $('.sub').css('opacity', '1');
     $('video').get(0).pause();
@@ -55,7 +62,7 @@ $(function() {
     $('.makerspace').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,0)');
     $('.tagline').css('opacity', textOpacity);
     $('.sub').css('opacity', textOpacity);
-    $('#makerspace-btn').css('visibility', 'visible');
+    //$('#makerspace-btn').css('visibility', 'visible');
   }, function() {
     // on mouseout, reset the background colour
     $('.makerspace').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,.3)');
@@ -69,7 +76,7 @@ $(function() {
     $('.data').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,0)');
     $('.tagline').css('opacity', textOpacity);
     $('.sub').css('opacity', textOpacity);
-    $('#data-btn').css('visibility', 'visible');
+    //$('#data-btn').css('visibility', 'visible');
   }, function() {
     // on mouseout, reset the background colour
     $('.data').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,.4)');
@@ -83,7 +90,7 @@ $(function() {
     $('.algorithms').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,0)');
     $('.tagline').css('opacity', textOpacity);
     $('.sub').css('opacity', textOpacity);
-    $('#algorithms-btn').css('visibility', 'visible');
+    //$('#algorithms-btn').css('visibility', 'visible');
   }, function() {
     // on mouseout, reset the background colour
     $('.algorithms').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,.4)');
@@ -97,7 +104,7 @@ $(function() {
     $('.catnip').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,0)');
     $('.tagline').css('opacity', textOpacity);
     $('.sub').css('opacity', textOpacity);
-    $('#catnip-btn').css('visibility', 'visible');
+    //$('#catnip-btn').css('visibility', 'visible');
   }, function() {
     // on mouseout, reset the background colour
     $('.catnip').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,.3)');
@@ -111,7 +118,7 @@ $(function() {
     $('.elks').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,0)');
     $('.tagline').css('opacity', textOpacity);
     $('.sub').css('opacity', textOpacity);
-    $('#elks-btn').css('visibility', 'visible');
+    //$('#elks-btn').css('visibility', 'visible');
   }, function() {
     // on mouseout, reset the background colour
     $('.elks').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,.3)');
@@ -125,7 +132,7 @@ $(function() {
     $('.arcade').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,0)');
     $('.tagline').css('opacity', textOpacity);
     $('.sub').css('opacity', textOpacity);
-    $('#arcade-btn').css('visibility', 'visible');
+    //$('#arcade-btn').css('visibility', 'visible');
   }, function() {
     // on mouseout, reset the background colour
     $('.arcade').css('box-shadow', 'inset 0 0 0 1000px rgba(0,0,0,.1)');
@@ -133,3 +140,4 @@ $(function() {
     $('.sub').css('opacity', '1'); 
   });
 });
+*/
