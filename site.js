@@ -18,6 +18,7 @@ $(function() {
   }
 });
 
+//Allow for gcan.co/#marathonmodal to link to marathon project
 $(document).ready(function() {
   var modal = "#marathonModal"
   if(window.location.href.indexOf(modal) != -1) {
@@ -25,6 +26,17 @@ $(document).ready(function() {
   }
 
 });
+
+//Google VR Makerspace 360 photo viewer code
+window.addEventListener('load', onVrViewLoad);
+
+function onVrViewLoad() {
+  // Selector '#vrview' finds element with id 'vrview'.
+  var vrView = new VRView.Player('#vrview', {
+    image: 'https://www.gcan.co/makerspace.jpg',
+    is_stereo: true
+  });
+}
 
 // create hover effect on homepage image when hovering over the headline or tagline
 $(function() {

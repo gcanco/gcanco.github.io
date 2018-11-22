@@ -7,10 +7,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://storage.googleapis.com/vrview/2.0/build/vrview.min.js"></script>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" type="image/jpg" href="GCAN.png">
   <link rel="stylesheet" href="animate.min.css">
   <title>Gabriel Caniglia</title>
+
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+<script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.js'></script>
+<link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.49.0/mapbox-gl.css' rel='stylesheet' />
 </head>
 <body>
     <section class="intro">
@@ -36,7 +41,10 @@
       <div class="modal-dialog modal-lg">
         <div class="modal-content">
         	<div class="videoWrapper">
-              <iframe src="https://player.vimeo.com/video/301526002?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+              <!-- <iframe src="https://player.vimeo.com/video/301526002?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+              <video autoplay loop muted width=100%>
+				<source src="Marathon Mockup 1080.mp4" type="video/mp4">
+			</video>
             </div>
             <h6 class="caption" id="headercaption">Running a marathon in 60 seconds: a timelapse of the system in action at the 2017 Chicago Marathon.</h6>
             <hr class="captionline">
@@ -44,15 +52,12 @@
           	<h1>Marathon Data Viz System</h1>
           	<hr class="titleunderline">
             <div class="tagline">The Data Visualization System (DVS) is used by race officials at events such as the Chicago Marathon,
-            the second largest marathon in the world.</div>
+            the second largest marathon in the world. This project has taught me design, development, and operations skills for a critical piece of software.</div>
             <h3>Keeping Runners Safe</h3>
             <p>I am part of a small group of students at Northwestern that develops and deploys the DVS. The DVS tracks the progress and medical information of thousands of runners, keeping race officials stationed at forward command tents informed about the status and well-being of participants.</p>
-            <img src="Devices2.jpg" width="100%"></img>
+            <p>On race day, it's used by medical professionals, public safety officials, federal government agencies, and race organizers. It allows them to monitor race progress and safety on their phones, tablets, laptops, and on large displays in forward command.</p>
+            <img src="Devices.jpg" width="100%"></img>
             <h6 class="caption">The system works across phones, tablets, laptops, and the large monitors in forward command.</h6>
-            <hr class="captionline">
-            <p>On race day, it’s used by medical professionals, public safety officials, federal government agencies, and race organizers. It allows them to monitor race progress and safety on their phones, tablets, laptops, and on large displays in forward command.</p>
-            <img src="FC Photo.jpg" width="100%"></img>
-            <h6 class="caption">Our system is part of a massive wall of displays in forward command, shown here at the 2018 Chicago Marathon (sensitive info blurred).</h6>
             <hr class="captionline">
             <h3>Where it's used</h3>
             <p>The system is currently in use across four events, keeping over 100,000 runners from around the world safe every year:</p>
@@ -60,18 +65,36 @@
             <b>Chevron Houston Marathon</b> (15,000+ runners)<br>
             <b>Aramco Houston Half Marathon</b> (20,000+ runners)<br>
             <b>Bank of America Shamrock Shuffle</b> (35,000+ runners)</p>
+            <img src="FC Photo.jpg" width="100%"></img>
+            <h6 class="caption">Our system is part of a massive wall of displays in forward command, shown here at the 2018 Chicago Marathon (sensitive info blurred).</h6>
+            <hr class="captionline">
             <h3>Developing and deploying the system</h3>
-            <p>During the past two years, I've helped transition the DVS to a responsive, mobile-friendly web app with new features and an optimized design.</p>
-            <p>My biggest contribution was rewriting and redesigning the dynamic course map implementation that displays runner density, medical information, GPS-tracked runners, weather, and more. I built the map using the Mapbox GL JS API.</p>
-            <p>I also spend much of my time on the project facilitating communication between the Northwestern team and race officials. I am on the ground during race days, deploying and operating the live system.</p>
+            <div class="row">
+            <div class="col-xs-6">
+	            <p>During the past two years, I've helped transition the DVS to a responsive, mobile-friendly web app with new features and an optimized design.</p>
+	            <p>My biggest contribution was rewriting and redesigning the dynamic course map implementation that displays runner density, medical information, GPS-tracked runners, weather, emergencies, and more. I built the map using the Mapbox GL JS API.</p>
+	            <p>Through user testing and collaboration with Northwestern data visualization researchers, I optimized the design for rapid data absorption. You can see the design on the right.</p>
+	            <p>I also spend much of my time on the project facilitating communication between the Northwestern team and race officials. I am on the ground during race days, deploying and operating the live system.</p>
+        	</div>
+        	<div class="col-xs-6">
+        		<img src="Map.jpg" width="100%" style="padding-top: 10px;"></img>
+        		<h6 class="caption">My redesign of the dynamic map display</h6>
+            	<hr class="captionline">
+        	</div>
+        	</div>
+        	<img src="Iteration.jpg" width="100%" style="margin-top: 45px;"></img>
+            <h6 class="caption" style="text-align: center;">Evolution of the system over the years; from a whiteboard to a responsive web app.</h6>
+            <hr class="captionline">
             <h3>Awards and publications</h3>
-            <p>Our system was awarded the prestigious INFORMS Innovative Applications in Analytics Award in April 2018.
-            We competed against the other finalists at the INFORMS Business Analytics Conference in Baltimore, including IBM, Macy's, BNSF, and Schneider.</p>
+            <p>In April 2018, our system won first place in the INFORMS Innovative
+			Applications in Analytics Award. We competed against other finalists at the 2018 INFORMS Business Analytics Conference in Baltimore, including IBM, Macy's, BNSF, and Schneider.</p>
+			<p>Our work will be published in an upcoming edition of the operations research journal <i>Interfaces.</i><p>
+			<p style="padding-left: 10px; font-size: 1.2em; padding-bottom: 10px;"><b>Citation:</b><br>Mehmet Ba&#351;dere, Gabriel Caniglia, Charles Collar, Christian Rozolis, George Chiampas, Michael Nishi, and Karen Smilowitz. SAFE: A Comprehensive Data Visualization System. Forthcoming in Interfaces.</p>
 			<img src="Magazine.jpg" width="60%" class="center"></img>
             <h6 class="caption" id="smallercaptionline">The team (I'm in red) featured in Northwestern Engineering Magazine</h6>
             <hr class="captionline" id="smallercaptionline">
             <h3>In the News</h3>
-            <ul>
+            <ul style="border-left: 4px solid white; padding-left: 10px;">
               <li><a id="news" target="_blank" href="http://meetings2.informs.org/wordpress/analytics2018/2018/01/19/northwestern-university-safe-situational-awareness-for-events-a-data-visualization-system/"><b>2018 INFORMS Business Analytics Conference:</b> SAFE (Situational Awareness for Events): A Data Visualization System</a></li>
               <li><a id="news" target="_blank" href="http://www.mccormick.northwestern.edu/news/articles/2017/10/engineers-optimize-marathon-volunteers.html"><b>Northwestern:</b> Engineers Optimize Marathon Volunteers</a></li>
               <li><a target="_blank" href="http://www.newsweek.com/2016/10/14/chicago-marathon-data-visualization-technology-506126.html"><b>Newsweek:</b> How the Chicago Marathon Will Keep Track of 1.7 Million People</a></li>
@@ -80,11 +103,8 @@
               <li><a target="_blank" href="http://www.mychicagoathlete.com/data-and-the-bank-of-america-chicago-marathon/"><b>Chicago Athlete Magazine:</b> Data and the Bank of America Chicago Marathon</a></li>
             </ul>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="close" data-dismiss="modal">Close</button></button>
-          </div>
+          <button type="button" class="btn dark center" data-dismiss="modal">Close</button></button>
         </div>
-    
       </div>
     </div>
     
@@ -97,55 +117,61 @@
 			<div class="tagline">Internationally-exhibited interactive art installation</div>
 	    </div>
     </section>
-    
+
     <div id="oceanModal" class="modal fade-scale" role="dialog">
+      <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
       <div class="modal-dialog modal-lg">
-    
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h2>"You Are the Ocean" is an interactive art installation where the participant's brain waves
-            control a projected ocean simulation. It began traveling to national and international art exhibitions in 2018.</h2>
-            <p>This project was a collaboration with Ozge Samanci, an interactive media artist and Northwestern Professor in the Radio, Television, and Film Department.
-            In early 2017, we started the project based on an idea she had for a new
-            interactive piece that would symbolize humanity's connection to nature.</p>
-            <p>I was in charge of all programming and implementation for the installation. I built the project using
-            the Unity Game Engine, C#, and the Neurosky Mindwave headset, with funding from the Undergraduate Research Assistant Program. In August 2017,
-            we filmed the demo video for the final product, which you can watch below.</p>
-            <div class="videoWrapper">
+        	<div class="videoWrapper">
               <iframe src="https://player.vimeo.com/video/232792092?title=0&byline=0&portrait=0" width="560" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
-            <p>Now that the project is complete, 
-            it is beginning to travel to art exhibitions both nationally and internationally. It has also been featured in the August 2018 issue of <a id="news" target="_blank" href="https://www.leonardo.info/leonardo"><b>Leonardo</b></a>, a journal 
-            at the intersection of the arts, science, and technology, published by The MIT Press.</p>
-            <p>Read our Leonardo article <a id="news" target="_blank" href="http://delivery.acm.org/10.1145/3210000/3205916/p442-samanci.pdf?ip=67.162.60.87&id=3205916&acc=OPEN&key=4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E4D4702B0C3E38B35%2E6D218144511F3437&__acm__=1535998701_7f8488486dbdb52658450b45d60b1062"><b>here</b></a>.</p>
-            <h2>Exhibitions</h2>
-            <ul>
+            <h6 class="caption" id="headercaption">"You Are the Ocean" demo video</h6>
+            <hr class="captionline">
+          <div class="modal-body">
+          	<h1>You Are the Ocean</h1>
+          	<hr class="titleunderline">
+            <div class="tagline">"You Are the Ocean" is a new media art installation where a participant's brainwaves control a projected ocean simulation. It began traveling to national and international art exhibitions in 2018.</div>
+            <h3>Collaborative Art</h3>
+            <p>This project was a collaboration with Dr. Ozge Samanci, a new media artist and Northwestern Professor in the Radio, Television, and Film Department. In early 2017, we started the project based on an idea she had for an interactive piece that would symbolize humanity's connection to nature.</p>
+            <img src="FILE.jpg" width="100%"></img>
+            <h6 class="caption">Installation view at FILE 2018 in S&#227;o Paulo, Brazil. The projection spans 30 feet, encompassing the entire wall.<br><span style="font-size: 0.8em;">Photo: Camila Picolo</span></h6>
+            <hr class="captionline">
+            <h3>Programming an ocean</h3>
+            <p>I was in charge of all programming and implementation for the installation. I built the project using the Unity Game Engine, C#, and the Neurosky Mindwave headset, with funding from the Undergraduate Research Assistant Program.</p>
+			<p>Dr. Samanci and I worked in close collaboration, meeting often to refine the installation's design and direction. In August 2017, we filmed the demo video for the final product, which you can watch at the top of the page. Since then, it has become quite a success, traveling to many selective exhibitions around the world.</p>
+            <img src="Currents.jpg" width="100%"></img>
+            <h6 class="caption">A crowd views the installation at Currents New Media in Santa Fe, NM.</h6>
+            <hr class="captionline">
+            <h3>Exhibitions</h3>
+            <ul style="border-left: 4px solid white; padding-left: 10px;">
               <!--<li><a id="news" target="_blank" href="https://www.wonderspaces.com"><b>Wonderspaces (upcoming)</b> San Diego, CA; Phoenix, AZ; Austin, TX; Miami, FL</a></li>-->
+              <li><a id="news" target="_blank" href="https://piksel.no"><b>Pixsel Festival (upcoming)</b> Bergen, Norway</a></li>
               <li><a id="news" target="_blank" href="http://www.plexusprojects.org"><b>Plexus Projects (upcoming)</b> Brooklyn, NY</a></li>
               <li><a id="news" target="_blank" href="https://www.brain-mind.org/stanford"><b>BrainMind Summit 2018</b> Stanford University</a></li>
               <li><a id="news" target="_blank" href="https://s2018.siggraph.org/conference/conference-overview/art-gallery/"><b>SIGGRAPH 2018 Art Gallery</b> Vancouver, BC</a></li>
-              <li><a id="news" target="_blank" href="https://file.org.br/file_sp_2018/"><b>FILE 2018 (Electronic Language International Festival)</b> S&#227;o Paulo, BR</a></li>
+              <li><a id="news" target="_blank" href="https://file.org.br/file_sp_2018/"><b>FILE 2018 (Electronic Language International Festival)</b> S&#227;o Paulo, Brazil</a></li>
               <li><a target="_blank" href="https://currentsnewmedia.org/work/you-are-the-ocean/"><b>Currents New Media 2018</b> Santa Fe, NM</a></li>
               <li><a target="_blank" href="https://commfest.northwestern.edu"><b>CommFest 2018</b> Evanston, IL</a></li>
               <li>Future locations to be announced</li>
             </ul>
-            <h2>In the News</h2>
-            <ul>
-              <li><a id="news" target="_blank" href="http://www.santafenewmexican.com/pasatiempo/art/making-waves-ozge-samanci-and-gabriel-caniglia-s-you-are/article_2a5546ec-e467-5dae-a64e-1694a2671926.html"><b>Pasatiempo | Santa Fe New Mexican:</b> Making waves: Ozge Samanci and Gabriel Caniglia's "You Are the Ocean"</a></li>
-              <li><a id="news" target="_blank" href="http://digicult.it/art/original-narratives-the-art-gallery-at-siggraph-2018/"><b>Digicult</b> “Original Narratives”: The Art Gallery at SIGGRAPH 2018</a></li>
-              <li><a id="news" target="_blank" href="https://www1.folha.uol.com.br/ilustrada/2018/07/em-festival-de-arte-eletronica-visitante-pode-controlar-oceano-e-esticar-corpos-nus.shtml"><b>Folha de S. Paulo:</b> [Portuguese] Em festival de arte eletrônica, visitante pode controlar oceano e esticar corpos nus</a></li>
-              <li><a target="_blank" href="https://globoplay.globo.com/v/6852610/"><b>SP1 News:</b> [Portuguese] Festival reúne obras de arte que provocam o corpo em SP</a></li>
-              <li><a target="_blank" href="http://radiogeekbr.com.br/file-sp-2018/"><b>Rádio Geek BR:</b> [Portuguese] FILE SP 2018</a></li>
+            <h3>Publications</h3>
+            <p>Dr. Samanci and I wrote an article about You Are the Ocean for <i>Leonardo</i>, a journal at the intersection of the arts, science, and technology, published by The MIT Press. Our article debuted at SIGGRAPH 2018, the world's largest computer graphics conference.</p>
+			<p style="padding-left: 10px; font-size: 1.2em; padding-bottom: 10px;"><b>Citation:</b><br>&#214;zge Samanci and Gabriel Caniglia. You Are the Ocean.
+			Leonardo, Volume 51, Issue 4, MIT Press.</p>
+			<img src="CommFest.jpg" width="100%"></img>
+            <h6 class="caption">Our installation at CommFest in Evanston, IL was accompanied by an improvisational dance performance.<br><span style="font-size: 0.8em;">Photo: Jasmin Shah/Northwestern University School of Communication</span></h6>
+            <hr class="captionline">
+            <h3>In the News</h3>
+            <ul style="border-left: 4px solid white; padding-left: 10px;">
+              <li><a id="news" target="_blank" href="http://www.santafenewmexican.com/pasatiempo/art/making-waves-ozge-samanci-and-gabriel-caniglia-s-you-are/article_2a5546ec-e467-5dae-a64e-1694a2671926.html"><b>Pasatiempo / Santa Fe New Mexican:</b> Making waves: Ozge Samanci and Gabriel Caniglia's "You Are the Ocean"</a></li>
+              <li><a id="news" target="_blank" href="http://digicult.it/art/original-narratives-the-art-gallery-at-siggraph-2018/"><b>Digicult</b> "Original Narratives": The Art Gallery at SIGGRAPH 2018</a></li>
+              <li><a id="news" target="_blank" href="https://www1.folha.uol.com.br/ilustrada/2018/07/em-festival-de-arte-eletronica-visitante-pode-controlar-oceano-e-esticar-corpos-nus.shtml"><b>Folha de S. Paulo:</b> [Portuguese] Em festival de arte eletr&ocirc;nica, visitante pode controlar oceano e esticar corpos nus</a></li>
+              <li><a target="_blank" href="https://globoplay.globo.com/v/6852610/"><b>SP1 News:</b> [Portuguese] Festival re&uacute;ne obras de arte que provocam o corpo em SP</a></li>
+              <li><a target="_blank" href="http://radiogeekbr.com.br/file-sp-2018/"><b>R&aacute;dio Geek BR:</b> [Portuguese] FILE SP 2018</a></li>
             </ul>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="close" data-dismiss="modal">Close</button></button>
-          </div>
+          <button type="button" class="btn dark center" data-dismiss="modal">Close</button></button>
         </div>
-    
       </div>
     </div>
 
@@ -158,8 +184,65 @@
 			<div class="tagline">Creating the home for Northwestern hardware and AR/VR startups</div>
 	    </div>
     </section>
+
+        <div id="makerspaceModal" class="modal fade-scale" role="dialog">
+      <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+        	<div class="videoWrapper">
+      			<img width="100%" src="makerspace.jpg" style="padding: 0; margin: 0; object-fit: cover; height: 100%"></img>
+            </div>
+            <h6 class="caption" id="headercaption">Left side of image: AR/VR Lab; right side of image: Makerspace<br><span style="font-size: 0.8em;">Photo: Nathan Weber</span></h6>
+            <hr class="captionline">
+          <div class="modal-body">
+          	<h1>The Garage Makerspace and XR Lab</h1>
+          	<hr class="titleunderline">
+            <div class="tagline">"You Are the Ocean" is a new media art installation where a participant's brainwaves control a projected ocean simulation. It began traveling to national and international art exhibitions in 2018.</div>
+            <h3>Collaborative Art</h3>
+            <p>This project was a collaboration with Dr. Ozge Samanci, a new media artist and Northwestern Professor in the Radio, Television, and Film Department. In early 2017, we started the project based on an idea she had for an interactive piece that would symbolize humanity's connection to nature.</p>
+            <div id='vrview'></div>
+            <h6 class="caption">Installation view at FILE 2018 in S&#227;o Paulo, Brazil. The projection spans 30 feet, encompassing the entire wall.<br><span style="font-size: 0.8em;">Photo: Camila Picolo</span></h6>
+            <hr class="captionline">
+            <h3>Programming an ocean</h3>
+            <p>I was in charge of all programming and implementation for the installation. I built the project using the Unity Game Engine, C#, and the Neurosky Mindwave headset, with funding from the Undergraduate Research Assistant Program.</p>
+			<p>Dr. Samanci and I worked in close collaboration, meeting often to refine the installation's design and direction. In August 2017, we filmed the demo video for the final product, which you can watch at the top of the page. Since then, it has become quite a success, traveling to many selective exhibitions around the world.</p>
+            <img src="Currents.jpg" width="100%"></img>
+            <h6 class="caption">A crowd views the installation at Currents New Media in Santa Fe, NM.</h6>
+            <hr class="captionline">
+            <h3>Exhibitions</h3>
+            <ul style="border-left: 4px solid white; padding-left: 10px;">
+              <!--<li><a id="news" target="_blank" href="https://www.wonderspaces.com"><b>Wonderspaces (upcoming)</b> San Diego, CA; Phoenix, AZ; Austin, TX; Miami, FL</a></li>-->
+              <li><a id="news" target="_blank" href="https://piksel.no"><b>Pixsel Festival (upcoming)</b> Bergen, Norway</a></li>
+              <li><a id="news" target="_blank" href="http://www.plexusprojects.org"><b>Plexus Projects (upcoming)</b> Brooklyn, NY</a></li>
+              <li><a id="news" target="_blank" href="https://www.brain-mind.org/stanford"><b>BrainMind Summit 2018</b> Stanford University</a></li>
+              <li><a id="news" target="_blank" href="https://s2018.siggraph.org/conference/conference-overview/art-gallery/"><b>SIGGRAPH 2018 Art Gallery</b> Vancouver, BC</a></li>
+              <li><a id="news" target="_blank" href="https://file.org.br/file_sp_2018/"><b>FILE 2018 (Electronic Language International Festival)</b> S&#227;o Paulo, Brazil</a></li>
+              <li><a target="_blank" href="https://currentsnewmedia.org/work/you-are-the-ocean/"><b>Currents New Media 2018</b> Santa Fe, NM</a></li>
+              <li><a target="_blank" href="https://commfest.northwestern.edu"><b>CommFest 2018</b> Evanston, IL</a></li>
+              <li>Future locations to be announced</li>
+            </ul>
+            <h3>Publications</h3>
+            <p>Dr. Samanci and I wrote an article about You Are the Ocean for <i>Leonardo</i>, a journal at the intersection of the arts, science, and technology, published by The MIT Press. Our article debuted at SIGGRAPH 2018, the world's largest computer graphics conference.</p>
+			<p style="padding-left: 10px; font-size: 1.2em; padding-bottom: 10px;"><b>Citation:</b><br>&#214;zge Samanci and Gabriel Caniglia. You Are the Ocean.
+			Leonardo, Volume 51, Issue 4, MIT Press.</p>
+			<img src="CommFest.jpg" width="100%"></img>
+            <h6 class="caption">Our installation at CommFest in Evanston, IL was accompanied by an improvisational dance performance.<br><span style="font-size: 0.8em;">Photo: Jasmin Shah/Northwestern University School of Communication</span></h6>
+            <hr class="captionline">
+            <h3>In the News</h3>
+            <ul style="border-left: 4px solid white; padding-left: 10px;">
+              <li><a id="news" target="_blank" href="http://www.santafenewmexican.com/pasatiempo/art/making-waves-ozge-samanci-and-gabriel-caniglia-s-you-are/article_2a5546ec-e467-5dae-a64e-1694a2671926.html"><b>Pasatiempo / Santa Fe New Mexican:</b> Making waves: Ozge Samanci and Gabriel Caniglia's "You Are the Ocean"</a></li>
+              <li><a id="news" target="_blank" href="http://digicult.it/art/original-narratives-the-art-gallery-at-siggraph-2018/"><b>Digicult</b> "Original Narratives": The Art Gallery at SIGGRAPH 2018</a></li>
+              <li><a id="news" target="_blank" href="https://www1.folha.uol.com.br/ilustrada/2018/07/em-festival-de-arte-eletronica-visitante-pode-controlar-oceano-e-esticar-corpos-nus.shtml"><b>Folha de S. Paulo:</b> [Portuguese] Em festival de arte eletr&ocirc;nica, visitante pode controlar oceano e esticar corpos nus</a></li>
+              <li><a target="_blank" href="https://globoplay.globo.com/v/6852610/"><b>SP1 News:</b> [Portuguese] Festival re&uacute;ne obras de arte que provocam o corpo em SP</a></li>
+              <li><a target="_blank" href="http://radiogeekbr.com.br/file-sp-2018/"><b>R&aacute;dio Geek BR:</b> [Portuguese] FILE SP 2018</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn dark center" data-dismiss="modal">Close</button></button>
+        </div>
+      </div>
+    </div>
     
-    <div id="makerspaceModal" class="modal fade-scale" role="dialog">
+    <div id="" class="modal fade-scale" role="dialog">
       <div class="modal-dialog modal-lg">
     
         <div class="modal-content">

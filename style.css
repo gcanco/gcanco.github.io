@@ -130,6 +130,16 @@ body.modal-open .inner{
     margin-top: 0%;
 }
 
+/*.left {
+  float: left;
+  width: 50%;
+}
+
+.right {
+  float: right;
+  width: 50%;
+}*/
+
 /*
 .content {
   display: table-cell;
@@ -148,7 +158,6 @@ h1 {
   color: white;
   font-weight: bold;
   margin-top: 15px;
-  cursor: pointer;
 }
 
 .titleunderline { 
@@ -188,7 +197,6 @@ h1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
 }
 
 /*
@@ -214,7 +222,7 @@ h3 {
   color: #a0a5a9;
   font-size: 2em;
   margin-bottom: -10px;
-  margin-top: 25px;
+  margin-top: 45px;
 }
 
 .name {
@@ -316,6 +324,9 @@ footer {
   border-radius: 3px;
 }
 .close {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: #313438;
   color: white;
   opacity: 1;
   font-size: 4em;
@@ -323,6 +334,22 @@ footer {
 }
 .close:hover {
   color: white;
+}
+.dark {
+  border-radius: 25px;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: white;
+  background-color: #232425;
+  margin-bottom: 25px;
+}
+.dark:hover {
+  color: white;
+  background-color: #101011;
 }
 #x {
   font-size: 4em;
@@ -347,7 +374,7 @@ footer {
 }
 ul {
     margin-top: 20px;
-    list-style-type: square;
+    list-style-type: none;
 }
 li {
     color: white;
