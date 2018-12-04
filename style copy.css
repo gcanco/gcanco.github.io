@@ -1,12 +1,12 @@
 * {
   box-sizing: border-box; 
-  color: black;
+  color: #333438 !important;
 }
 
 body {
   margin: 0; 
   font-family: 'Overpass', sans-serif;
-  background-color: lightgrey;
+  background-color: white;
 }
 
 section {

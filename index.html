@@ -20,12 +20,12 @@
 <body>
     <section class="intro">
       <div class="first">
-        <h1>Hi, I'm Gabriel Caniglia</h1>
-        <div class="tagline" style="margin-top: 50px;">I study computer science, cognitive science, and design at Northwestern University. My work focuses on user experience and immersive tech.</p>
-        <div class="tagline">Want to know more? Shoot me an <a href="mailto:gabe@gcan.co">email</a>, check out my <a target="_blank" href="https://www.linkedin.com/in/gcaniglia/">LinkedIn</a>, or take a look at my <a target="_blank" href="ResumeGabrielCaniglia.pdf">resume</a>.</p>
+        <h1>Hi, I'm Gabriel Caniglia.</h1>
+        <div class="tagline" style="margin-top: 30px; margin-bottom: -5px;">I study computer science, cognitive science, and design at Northwestern University. My work focuses on user experience (UX) and immersive tech (XR).</div>
+        <div id="app"></div>
+        <div class="tagline" style="margin-top: -5px; margin-bottom: 0px;">Want to know more? Shoot me an <a href="mailto:gabe@gcan.co">email</a>, check out my <a target="_blank" href="https://www.linkedin.com/in/gcaniglia/">LinkedIn</a>, or take a look at my <a target="_blank" href="ResumeGabrielCaniglia.pdf">resume</a>.</div>
      </div>
     </section>
-    
     <section>
 	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#marathonModal">
 			<video class="homeimage" autoplay loop muted poster="marathon.jpg">
@@ -38,7 +38,7 @@
     
     <div id="marathonModal" class="modal fade-scale" role="dialog">
       <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
         	<div class="videoWrapper">
               <!-- <iframe src="https://player.vimeo.com/video/301526002?title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
@@ -47,7 +47,7 @@
 			</video>
             </div>
             <h6 class="caption" id="headercaption">Running a marathon in 60 seconds: a timelapse of the system in action at the 2017 Chicago Marathon.</h6>
-            <hr class="captionline">
+            <hr class="captionline" style="margin-bottom: 0px;">
           <div class="modal-body">
           	<h1>Marathon Data Viz System</h1>
           	<hr class="titleunderline">
@@ -61,30 +61,32 @@
             <hr class="captionline">
             <h3>Where it's used</h3>
             <p>The system is currently in use across four events, keeping over 100,000 runners from around the world safe every year:</p>
-            <p style="border-left: 4px solid white; padding-left: 10px;"><b>Bank of America Chicago Marathon</b> (45,000+ runners)<br>
-            <b>Chevron Houston Marathon</b> (15,000+ runners)<br>
-            <b>Aramco Houston Half Marathon</b> (20,000+ runners)<br>
-            <b>Bank of America Shamrock Shuffle</b> (35,000+ runners)</p>
+            <ul>
+            	<li><b>Bank of America Chicago Marathon</b> (45,000+ runners)</li>
+            	<li><b>Chevron Houston Marathon</b> (15,000+ runners)</li>
+            	<li><b>Aramco Houston Half Marathon</b> (20,000+ runners)</li>
+            	<li><b>Bank of America Shamrock Shuffle</b> (35,000+ runners)</li>
+            </ul>
             <img src="FC Photo.jpg" width="100%"></img>
             <h6 class="caption">Our system is part of a massive wall of displays in forward command, shown here at the 2018 Chicago Marathon (sensitive info blurred).</h6>
             <hr class="captionline">
             <h3>Developing and deploying the system</h3>
             <div class="row">
-            <div class="col-xs-6">
-	            <p>During the past two years, I've helped transition the DVS to a responsive, mobile-friendly web app with new features and an optimized design.</p>
-	            <p>My biggest contribution was rewriting and redesigning the dynamic course map implementation that displays runner density, medical information, GPS-tracked runners, weather, emergencies, and more. I built the map using the Mapbox GL JS API.</p>
-	            <p>Through user testing and collaboration with Northwestern data visualization researchers, I optimized the design for rapid data absorption. You can see the design on the right.</p>
-	            <p>I also spend much of my time on the project facilitating communication between the Northwestern team and race officials. I am on the ground during race days, deploying and operating the live system.</p>
+	            <div class="col-xs-6">
+		            <p>During the past two years, I've helped transition the DVS to a responsive, mobile-friendly web app with new features and an improved design.</p>
+		            <p>My biggest contribution was rewriting and redesigning the dynamic course map implementation that displays runner density, medical information, GPS-tracked runners, weather, emergencies, and more. I built the map using the Mapbox GL JS API.</p>
+		            <p>Through user testing and collaboration with Northwestern data visualization researchers, I optimized the design for rapid data absorption. You can see the design on the right.</p>
+		            <p>I also spend much of my time on the project facilitating communication between our team and race officials, ensuring we meet their needs when building the system. I am on site during race days, deploying and operating the live system.</p>
+	        	</div>
+	        	<div class="col-xs-6">
+	        		<img src="Map.jpg" width="100%" style="padding-top: 10px;"></img>
+	        		<h6 class="caption">My redesign of the dynamic map display</h6>
+	            	<hr class="captionline">
+	        	</div>
         	</div>
-        	<div class="col-xs-6">
-        		<img src="Map.jpg" width="100%" style="padding-top: 10px;"></img>
-        		<h6 class="caption">My redesign of the dynamic map display</h6>
-            	<hr class="captionline">
-        	</div>
-        	</div>
-        	<img src="Iteration.jpg" width="100%" style="margin-top: 45px;"></img>
-            <h6 class="caption" style="text-align: center;">Evolution of the system over the years; from a whiteboard to a responsive web app.</h6>
-            <hr class="captionline">
+        	<img src="Iteration.jpg" width="100%" style="margin-top: 0px;"></img>
+            <h6 class="caption" id="smallercaptionline">Evolution of the system over the years; from a whiteboard to a responsive web app.</h6>
+            <hr class="captionline" id="smallercaptionlines">
             <h3>Awards and publications</h3>
             <p>In April 2018, our system won first place in the INFORMS Innovative
 			Applications in Analytics Award. We competed against other finalists at the 2018 INFORMS Business Analytics Conference in Baltimore, including IBM, Macy's, BNSF, and Schneider.</p>
@@ -92,9 +94,9 @@
 			<p style="padding-left: 10px; font-size: 1.2em; padding-bottom: 10px;"><b>Citation:</b><br>Mehmet Ba&#351;dere, Gabriel Caniglia, Charles Collar, Christian Rozolis, George Chiampas, Michael Nishi, and Karen Smilowitz. SAFE: A Comprehensive Data Visualization System. Forthcoming in Interfaces.</p>
 			<img src="Magazine.jpg" width="60%" class="center"></img>
             <h6 class="caption" id="smallercaptionline">The team (I'm in red) featured in Northwestern Engineering Magazine</h6>
-            <hr class="captionline" id="smallercaptionline">
+            <hr class="captionline" id="smallercaptionlines">
             <h3>In the News</h3>
-            <ul style="border-left: 4px solid white; padding-left: 10px;">
+            <ul style="padding-left: 10px;">
               <li><a id="news" target="_blank" href="http://meetings2.informs.org/wordpress/analytics2018/2018/01/19/northwestern-university-safe-situational-awareness-for-events-a-data-visualization-system/"><b>2018 INFORMS Business Analytics Conference:</b> SAFE (Situational Awareness for Events): A Data Visualization System</a></li>
               <li><a id="news" target="_blank" href="http://www.mccormick.northwestern.edu/news/articles/2017/10/engineers-optimize-marathon-volunteers.html"><b>Northwestern:</b> Engineers Optimize Marathon Volunteers</a></li>
               <li><a target="_blank" href="http://www.newsweek.com/2016/10/14/chicago-marathon-data-visualization-technology-506126.html"><b>Newsweek:</b> How the Chicago Marathon Will Keep Track of 1.7 Million People</a></li>
@@ -108,10 +110,10 @@
       </div>
     </div>
     
-    <section>
+    <section><a name="ocean"></a>
 	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#oceanModal">
 			<video class="homeimage" autoplay loop muted poster="ocean.jpg">
-				<source src="YATO Web.mp4" type="video/mp4">
+				<source src="YATO.m4v" type="video/mp4">
 			</video>
 			<h1>You Are the Ocean</h1>
 			<div class="tagline">Internationally-exhibited interactive art installation</div>
@@ -120,30 +122,32 @@
 
     <div id="oceanModal" class="modal fade-scale" role="dialog">
       <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
         	<div class="videoWrapper">
               <iframe src="https://player.vimeo.com/video/232792092?title=0&byline=0&portrait=0" width="560" height="349" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             </div>
             <h6 class="caption" id="headercaption">"You Are the Ocean" demo video</h6>
-            <hr class="captionline">
+            <hr class="captionline" style="margin-bottom: 0px;">
           <div class="modal-body">
           	<h1>You Are the Ocean</h1>
           	<hr class="titleunderline">
             <div class="tagline">"You Are the Ocean" is a new media art installation where a participant's brainwaves control a projected ocean simulation. It began traveling to national and international art exhibitions in 2018.</div>
             <h3>Collaborative Art</h3>
-            <p>This project was a collaboration with Dr. Ozge Samanci, a new media artist and Northwestern Professor in the Radio, Television, and Film Department. In early 2017, we started the project based on an idea she had for an interactive piece that would symbolize humanity's connection to nature.</p>
+            <p>This project was a collaboration with Dr. &#214;zge Samanci, a new media artist and Northwestern professor in the Radio, Television, and Film Department. In early 2017, we started the project based on an idea she had for an interactive piece that would symbolize humanity's connection to nature. The installation demonstrates that human thinking has a direct impact on the environment.</p>
             <img src="FILE.jpg" width="100%"></img>
             <h6 class="caption">Installation view at FILE 2018 in S&#227;o Paulo, Brazil. The projection spans 30 feet, encompassing the entire wall.<br><span style="font-size: 0.8em;">Photo: Camila Picolo</span></h6>
             <hr class="captionline">
             <h3>Programming an ocean</h3>
-            <p>I was in charge of all programming and implementation for the installation. I built the project using the Unity Game Engine, C#, and the Neurosky Mindwave headset, with funding from the Undergraduate Research Assistant Program.</p>
-			<p>Dr. Samanci and I worked in close collaboration, meeting often to refine the installation's design and direction. In August 2017, we filmed the demo video for the final product, which you can watch at the top of the page. Since then, it has become quite a success, traveling to many selective exhibitions around the world.</p>
+            <p>I was in charge of all programming and implementation for the installation. I built the project using the Unity Game Engine and C#. The installation uses the Neurosky Mindwave, a consumer-oriented neuroheadset we chose for its inexpensiveness and ease of use. The project was funded by the Undergraduate Research Assistant Program.</p>
+			<p>Dr. Samanci and I worked in close collaboration, meeting often to refine the installation's design and direction. I spent much of my time working to make the ocean and sky as photorealistic as possible given the constraints of real-time rendering.</p>
+			<p>In August 2017, we filmed the demo video for the final project, which you can watch at the top of the page. In this video, you'll see how the installation works and the wonderful ways a person's thoughts can turn an ocean from calm to stormy. Since filming the video, the project has become quite a success, traveling to many selective exhibitions around the world.</p>
             <img src="Currents.jpg" width="100%"></img>
             <h6 class="caption">A crowd views the installation at Currents New Media in Santa Fe, NM.</h6>
             <hr class="captionline">
             <h3>Exhibitions</h3>
-            <ul style="border-left: 4px solid white; padding-left: 10px;">
+            <p>Dr. Samanci and I travel with "You Are the Ocean," sometimes alone and sometimes together. In 2018, I had the pleasure of setting up the installation in S&#227;o Paulo, Brazil, Vancouver, BC, and at Stanford University and Northwestern University.</p>
+            <ul style="padding-left: 10px; padding-bottom: 30px;">
               <!--<li><a id="news" target="_blank" href="https://www.wonderspaces.com"><b>Wonderspaces (upcoming)</b> San Diego, CA; Phoenix, AZ; Austin, TX; Miami, FL</a></li>-->
               <li><a id="news" target="_blank" href="https://piksel.no"><b>Pixsel Festival (upcoming)</b> Bergen, Norway</a></li>
               <li><a id="news" target="_blank" href="http://www.plexusprojects.org"><b>Plexus Projects (upcoming)</b> Brooklyn, NY</a></li>
@@ -151,18 +155,18 @@
               <li><a id="news" target="_blank" href="https://s2018.siggraph.org/conference/conference-overview/art-gallery/"><b>SIGGRAPH 2018 Art Gallery</b> Vancouver, BC</a></li>
               <li><a id="news" target="_blank" href="https://file.org.br/file_sp_2018/"><b>FILE 2018 (Electronic Language International Festival)</b> S&#227;o Paulo, Brazil</a></li>
               <li><a target="_blank" href="https://currentsnewmedia.org/work/you-are-the-ocean/"><b>Currents New Media 2018</b> Santa Fe, NM</a></li>
-              <li><a target="_blank" href="https://commfest.northwestern.edu"><b>CommFest 2018</b> Evanston, IL</a></li>
+              <li><a target="_blank" href="https://commfest.northwestern.edu"><b>CommFest 2018</b> Northwestern University</a></li>
               <li>Future locations to be announced</li>
             </ul>
             <h3>Publications</h3>
-            <p>Dr. Samanci and I wrote an article about You Are the Ocean for <i>Leonardo</i>, a journal at the intersection of the arts, science, and technology, published by The MIT Press. Our article debuted at SIGGRAPH 2018, the world's largest computer graphics conference.</p>
+            <p>Dr. Samanci and I wrote an article about "You Are the Ocean" for <i>Leonardo</i>, a journal at the intersection of the arts, science, and technology, published by The MIT Press. Our article debuted at SIGGRAPH 2018, the world's largest computer graphics conference.</p>
 			<p style="padding-left: 10px; font-size: 1.2em; padding-bottom: 10px;"><b>Citation:</b><br>&#214;zge Samanci and Gabriel Caniglia. You Are the Ocean.
 			Leonardo, Volume 51, Issue 4, MIT Press.</p>
 			<img src="CommFest.jpg" width="100%"></img>
             <h6 class="caption">Our installation at CommFest in Evanston, IL was accompanied by an improvisational dance performance.<br><span style="font-size: 0.8em;">Photo: Jasmin Shah/Northwestern University School of Communication</span></h6>
             <hr class="captionline">
             <h3>In the News</h3>
-            <ul style="border-left: 4px solid white; padding-left: 10px;">
+            <ul style="padding-left: 10px;">
               <li><a id="news" target="_blank" href="http://www.santafenewmexican.com/pasatiempo/art/making-waves-ozge-samanci-and-gabriel-caniglia-s-you-are/article_2a5546ec-e467-5dae-a64e-1694a2671926.html"><b>Pasatiempo / Santa Fe New Mexican:</b> Making waves: Ozge Samanci and Gabriel Caniglia's "You Are the Ocean"</a></li>
               <li><a id="news" target="_blank" href="http://digicult.it/art/original-narratives-the-art-gallery-at-siggraph-2018/"><b>Digicult</b> "Original Narratives": The Art Gallery at SIGGRAPH 2018</a></li>
               <li><a id="news" target="_blank" href="https://www1.folha.uol.com.br/ilustrada/2018/07/em-festival-de-arte-eletronica-visitante-pode-controlar-oceano-e-esticar-corpos-nus.shtml"><b>Folha de S. Paulo:</b> [Portuguese] Em festival de arte eletr&ocirc;nica, visitante pode controlar oceano e esticar corpos nus</a></li>
@@ -185,213 +189,261 @@
 	    </div>
     </section>
 
-        <div id="makerspaceModal" class="modal fade-scale" role="dialog">
+    <div id="makerspaceModal" class="modal fade-scale" role="dialog">
       <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-      <div class="modal-dialog modal-lg">
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
         	<div class="videoWrapper">
-      			<img width="100%" src="makerspace.jpg" style="padding: 0; margin: 0; object-fit: cover; height: 100%"></img>
+      			<video autoplay loop muted poster="makerspace.jpg" class="leadimage">
+				
+				</video>
             </div>
             <h6 class="caption" id="headercaption">Left side of image: AR/VR Lab; right side of image: Makerspace<br><span style="font-size: 0.8em;">Photo: Nathan Weber</span></h6>
-            <hr class="captionline">
+            <hr class="captionline" style="margin-bottom: 0px;">
           <div class="modal-body">
           	<h1>The Garage Makerspace and XR Lab</h1>
           	<hr class="titleunderline">
-            <div class="tagline">"You Are the Ocean" is a new media art installation where a participant's brainwaves control a projected ocean simulation. It began traveling to national and international art exhibitions in 2018.</div>
-            <h3>Collaborative Art</h3>
-            <p>This project was a collaboration with Dr. Ozge Samanci, a new media artist and Northwestern Professor in the Radio, Television, and Film Department. In early 2017, we started the project based on an idea she had for an interactive piece that would symbolize humanity's connection to nature.</p>
-            <div id='vrview'></div>
-            <h6 class="caption">Installation view at FILE 2018 in S&#227;o Paulo, Brazil. The projection spans 30 feet, encompassing the entire wall.<br><span style="font-size: 0.8em;">Photo: Camila Picolo</span></h6>
+            <div class="tagline">The Makerspace, located in Northwestern's center for entrepreneurship and innovation, is a ~2,250 sq ft space that I designed, built, and maintain.</div>
+            <h3>Technical Consultant</h3>
+            <p>I began working at The Garage when it first opened, during the fall of 2015. As a technical consultant, I help manage the growing collection of technology contained within the space, which includes teaching students how to use the equipment.</p>
+            <p>A problem quickly became apparent: The Garage had no central location for its growing collection of 3D printers, CNC mills, and other maker equipment. During the summer of 2016, I had the unique opportunity to convert one of the classrooms into a Makerspace as a full-time internship. The goal was to create a dedicated learning and working environment for students interested in AR, VR, and hardware.</p>
+        </div>
+            <div id='vrview' style="margin: 55px 0 -5px 0;"></div>
+            <div class="modal-body">
+            <h6 class="caption" style="margin-top: -5px;">Interactive 360 photo of the Makerspace; use your mouse or finger to drag the image and see the space.</h6>
             <hr class="captionline">
-            <h3>Programming an ocean</h3>
-            <p>I was in charge of all programming and implementation for the installation. I built the project using the Unity Game Engine, C#, and the Neurosky Mindwave headset, with funding from the Undergraduate Research Assistant Program.</p>
-			<p>Dr. Samanci and I worked in close collaboration, meeting often to refine the installation's design and direction. In August 2017, we filmed the demo video for the final product, which you can watch at the top of the page. Since then, it has become quite a success, traveling to many selective exhibitions around the world.</p>
-            <img src="Currents.jpg" width="100%"></img>
-            <h6 class="caption">A crowd views the installation at Currents New Media in Santa Fe, NM.</h6>
+            <h3>Creating the space</h3>
+			<p>About two thirds of the space is the Prototyping Lab, dedicated to The Garage's large collection of maker equipment. Along with the IT Manager at The Garage, I designed the layout of the space, housing 3D printers, CNC mills, laser cutters, and woodworking and electronics equipment.</p>
+            <img src="prototyping.jpg" width="100%"></img>
+            <h6 class="caption">The Prototyping Lab houses all of The Garage's maker equipment.<br><span style="font-size: 0.8em;">Photo: Nathan Weber</span></h6>
             <hr class="captionline">
-            <h3>Exhibitions</h3>
-            <ul style="border-left: 4px solid white; padding-left: 10px;">
-              <!--<li><a id="news" target="_blank" href="https://www.wonderspaces.com"><b>Wonderspaces (upcoming)</b> San Diego, CA; Phoenix, AZ; Austin, TX; Miami, FL</a></li>-->
-              <li><a id="news" target="_blank" href="https://piksel.no"><b>Pixsel Festival (upcoming)</b> Bergen, Norway</a></li>
-              <li><a id="news" target="_blank" href="http://www.plexusprojects.org"><b>Plexus Projects (upcoming)</b> Brooklyn, NY</a></li>
-              <li><a id="news" target="_blank" href="https://www.brain-mind.org/stanford"><b>BrainMind Summit 2018</b> Stanford University</a></li>
-              <li><a id="news" target="_blank" href="https://s2018.siggraph.org/conference/conference-overview/art-gallery/"><b>SIGGRAPH 2018 Art Gallery</b> Vancouver, BC</a></li>
-              <li><a id="news" target="_blank" href="https://file.org.br/file_sp_2018/"><b>FILE 2018 (Electronic Language International Festival)</b> S&#227;o Paulo, Brazil</a></li>
-              <li><a target="_blank" href="https://currentsnewmedia.org/work/you-are-the-ocean/"><b>Currents New Media 2018</b> Santa Fe, NM</a></li>
-              <li><a target="_blank" href="https://commfest.northwestern.edu"><b>CommFest 2018</b> Evanston, IL</a></li>
-              <li>Future locations to be announced</li>
-            </ul>
-            <h3>Publications</h3>
-            <p>Dr. Samanci and I wrote an article about You Are the Ocean for <i>Leonardo</i>, a journal at the intersection of the arts, science, and technology, published by The MIT Press. Our article debuted at SIGGRAPH 2018, the world's largest computer graphics conference.</p>
-			<p style="padding-left: 10px; font-size: 1.2em; padding-bottom: 10px;"><b>Citation:</b><br>&#214;zge Samanci and Gabriel Caniglia. You Are the Ocean.
-			Leonardo, Volume 51, Issue 4, MIT Press.</p>
-			<img src="CommFest.jpg" width="100%"></img>
-            <h6 class="caption">Our installation at CommFest in Evanston, IL was accompanied by an improvisational dance performance.<br><span style="font-size: 0.8em;">Photo: Jasmin Shah/Northwestern University School of Communication</span></h6>
+            <p>The Garage also had a growing collection of AR and VR headsets, but no dedicated place to use them. I designed the AR/VR Lab to fill the other third of the space. It contains a dedicated setup with powerful gaming computers to run the latest VR headsets, as well as green walls and flooring for photography, videography, and "mixed reality" recordings of people in VR experiences.</p>
+            <img src="mixedreality.jpg" width="100%"></img>
+            <h6 class="caption">Mixed reality recording in the AR/VR Lab, allowing people to watch a VR experience from a third-person perspective.</h6>
             <hr class="captionline">
-            <h3>In the News</h3>
-            <ul style="border-left: 4px solid white; padding-left: 10px;">
-              <li><a id="news" target="_blank" href="http://www.santafenewmexican.com/pasatiempo/art/making-waves-ozge-samanci-and-gabriel-caniglia-s-you-are/article_2a5546ec-e467-5dae-a64e-1694a2671926.html"><b>Pasatiempo / Santa Fe New Mexican:</b> Making waves: Ozge Samanci and Gabriel Caniglia's "You Are the Ocean"</a></li>
-              <li><a id="news" target="_blank" href="http://digicult.it/art/original-narratives-the-art-gallery-at-siggraph-2018/"><b>Digicult</b> "Original Narratives": The Art Gallery at SIGGRAPH 2018</a></li>
-              <li><a id="news" target="_blank" href="https://www1.folha.uol.com.br/ilustrada/2018/07/em-festival-de-arte-eletronica-visitante-pode-controlar-oceano-e-esticar-corpos-nus.shtml"><b>Folha de S. Paulo:</b> [Portuguese] Em festival de arte eletr&ocirc;nica, visitante pode controlar oceano e esticar corpos nus</a></li>
-              <li><a target="_blank" href="https://globoplay.globo.com/v/6852610/"><b>SP1 News:</b> [Portuguese] Festival re&uacute;ne obras de arte que provocam o corpo em SP</a></li>
-              <li><a target="_blank" href="http://radiogeekbr.com.br/file-sp-2018/"><b>R&aacute;dio Geek BR:</b> [Portuguese] FILE SP 2018</a></li>
-            </ul>
+            <h3>Managing the space</h3>
+            <p>I still work at The Garage during the school year, continuously maintaining the Makerspace and updating it with the latest technology. The space is used every day by student-led startups that currently incubate at The Garage, especially those working on hardware or AR/VR development. It's also open to the entire Northwestern community for demonstrations of devices such as the Magic Leap One, HTC Vive Pro, and Microsoft HoloLens.</p>
+            <img src="garage.jpg" width="100%"></img>
+            <h6 class="caption">Yours truly demoing the HTC Vive.<br><span style="font-size: 0.8em;">Photo: Nathan Weber</span></h6>
+            <hr class="captionline">
+            <p>I also maintain the pages of The Garage website that detail the equipment contained in the <a target="_blank" href="https://thegarage.northwestern.edu/resources/prototyping-lab/">Prototyping Lab</a> and <a target="_blank" href="https://thegarage.northwestern.edu/resources/ar-vr-lab/">AR/VR Lab</a>. I've also written user guides for all the equipment, accessible by clicking on the equipment icons on The Garage site.</p>
+          </div>
+          <button type="button" class="btn dark center" data-dismiss="modal">Close</button></button>
+        </div>
+      </div>
+    </div>
+
+    <section>
+	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#oscillationsModal">
+			<video class="homeimage" autoplay loop muted poster="oscillations.jpg">
+				
+			</video>
+			<h1>Oscillations Art</h1>
+			<div class="tagline">Experiencing performance art in VR</div>
+	    </div>
+    </section>
+
+    <div id="oscillationsModal" class="modal fade-scale" role="dialog">
+      <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+        	<div class="videoWrapper">
+      			<video autoplay loop muted poster="oscillations.jpg" class="leadimage">
+				
+				</video>
+            </div>
+            <h6 class="caption" id="headercaption">Oscillations promotional photo</h6>
+            <hr class="captionline" style="margin-bottom: 0px;">
+          <div class="modal-body">
+          	<h1>Oscillations Art</h1>
+          	<hr class="titleunderline">
+            <div class="tagline">At Oscillations, I researched and developed new ways to experience performance art using virtual reality, spatial audio, and interactivity.</div>
+            <h3>Defining the future of entertainment</h3>
+            <p>Oscillations is a startup working on new ways to create and consume digital entertainment. It consists of a global network of dancers, acrobats, and other performers (Oscillations calls them movement artists). They collaborate with researchers and technologists, who are exploring the latest advancements in neuroscience and immersive technologies to create compelling new experiences.</p>
+            <p>Oscillations has a research partnership with Northwestern's Knight Lab for Media Innovation. I became involved with the company when I took a class at the Knight Lab where we consulted on emerging technologies for Oscillations. The company is also actively working on VR music videos and other productions.</p>
+            <img src="Mocap.jpg" width="100%"></img>
+            <h6 class="caption">That's me on the left, testing motion capture techniques with two Oscillations performers.</h6>
+            <hr class="captionline">
+            <h3>Researching immersive media</h3>
+			<p>At the Knight Lab, I researched audience engagement metrics for immersive media, cost-effective motion capture techniques, and spatial audio. These were areas that Oscillations wanted to learn more about.</p>
+			<p>Our work in the class culminated in a panel presentation we did alongside Oscillations and a group of professors working in interdisciplinary areas of media, technology, and art. <a target="_blank" href="https://studio.knightlab.com/projects/oscillations-vr/">Check out our final presentation on the Knight Lab website.</a></p>
+            <img src="OscPanel.jpg" width="60%" class="center"></img>
+            <h6 class="caption" id="smallercaptionline">The poster for our panel presentation at Northwestern.</h6>
+            <hr class="captionline" id="smallercaptionlines">
+            <p>I wanted to do more after the class ended, so I joined Oscillations as a UX Intern over the summer. During my work there, I delved deep into one of the areas I formely researched: spatial audio, which involves situating audio in a 3D environment. Over the summer I developed a novel audio spatialization technique for the company's first VR music video project.</p>
+            <p>The project involved assigning individual instruments from the song to individual dancers in the video. This created an immersive experience, where the dancers seemed to create sounds with their movements. I worked on the implementation using the Unity Game Engine and Facebook Spatial Workstation plugins for the Reaper DAW.</p>
+            <img src="Crowd.jpg" width="100%"></img>
+            <h6 class="caption">The Oscillations team, consisting of movement artists, researchers, and technologists. I'm sitting on the far right.</h6>
+            <hr class="captionline">
+            <h3>Products</h3>
+            <p>Unfortunately, the projects I worked on have not yet been released to the public, so I don't have much to share currently. However, the interactive VR music video has been submitted to many film festivals, so expect updates soon and an eventual public release.</p>
+          </div>
+          <button type="button" class="btn dark center" data-dismiss="modal">Close</button></button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="width: 50vw; display: table; margin-left: auto; margin-right: auto;">
+	    <div class="col-xs-5" style="padding: 0;">
+	    <section class="small">
+		    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#algorithmsModal">
+				<video class="homeimage2" autoplay loop muted poster="algorithms.jpg">
+					
+				</video>
+				<h2>Tackling Fake News</h2>
+				<div class="tagline">User interface study for the Facebook News Feed</div>
+		    </div>
+	    </section>
+		</div>
+
+	    <div class="col-xs-5" style="padding-left: 14.5%;">
+	    <section class="small">
+		    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#dataModal">
+				<video class="homeimage2" autoplay loop muted poster="data.jpg">
+					
+				</video>
+				<h2>Data Viz in VR</h2>
+				<div class="tagline">Exploring data visualization in immersive environments</div>
+		    </div>
+	    </section>
+		</div>
+		</div>
+
+	    <div class="row" style="width: 50vw; display: table; margin-left: auto; margin-right: auto;">
+	    <div class="col-xs-5" style="padding: 0;">
+	    <section class="small">
+		    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#catnipModal">
+				<video class="homeimage2" autoplay loop muted poster="catnip.jpg">
+					
+				</video>
+				<h2>Catnip</h2>
+				<div class="tagline">Northwestern-tailored time management app</div>
+		    </div>
+	    </section>
+		</div>
+
+		<div class="col-xs-5" style="padding-left: 14.5%;">
+	    <section  class="small">
+		    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#arcadeModal">
+				<video class="homeimage2" autoplay loop muted poster="arcade.jpg">
+					
+				</video>
+				<h2>Mortal Kombat II</h2>
+				<div class="tagline">Arcade cabinet restoration and retrofit</div>
+		    </div>
+	    </section>
+		</div>
+	</div>
+
+    <div id="algorithmsModal" class="modal fade-scale" role="dialog">
+      <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+        	<div class="videoWrapper">
+      			<video width="100%" autoplay loop muted poster="algorithms.jpg" class="leadimage">
+				
+				</video>
+            </div>
+            <h6 class="caption" id="headercaption">Mockups of our additive interface for the Facebook News Feed</h6>
+            <hr class="captionline" style="margin-bottom: 0px;">
+          <div class="modal-body">
+          	<h1>Tackling Fake News</h1>
+          	<hr class="titleunderline">
+            <div class="tagline">The Facebook News Feed has a fake news problem. This project attempts to address it from a user interface perspective.</div>
+            <h3>UX Design and Research</h3>
+            <p>Algorithms and Society was an interdisciplinary seminar class taught by Professor Brent Hecht. Each week, we covered many of alarming impacts algorithms have on society, from the sharing economy to the filter bubble. As part of a quarter-long group project, we had to address one of the problems discussed in class. My group attempted to tackle a big one: fake news.</p>
+            <p>Building off of existing research on algorithmic methods of fake news detection, we addressed user interface concerns for what a fake news detection tool would look like. We targeted the Facebook News Feed because of its well-known issues with fake news during the 2016 U.S. presidential election. We devised an interface motivated by relevant HCI and cognitive psychology research, ran user testing experiments on our prototypes, and analyzed our findings in a final paper.</p>
+			<p><a target="_blank" href="TacklingFakeNews.pdf">Read the final paper here.</a></p>
+          </div>
+          <button type="button" class="btn dark center" data-dismiss="modal">Close</button></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dataModal" class="modal fade-scale" role="dialog">
+      <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+        	<div class="videoWrapper">
+      			<div class="sketchfab-embed-wrapper"><iframe width="640" height="480" src="https://sketchfab.com/models/6eeb377307174b30a1e19ab4d6d5197b/embed" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div>
+            </div>
+            <h6 class="caption" id="headercaption">Interactive 360 prototype of a VR data visualization I made. You can move it around on the screen or check it out in VR with Google Cardboard.</h6>
+            <hr class="captionline" style="margin-bottom: 0px;">
+          <div class="modal-body">
+          	<h1>Data Viz in VR</h1>
+          	<hr class="titleunderline">
+            <div class="tagline">At Northwestern's lab for media innovation, I explored possibilities and best practices for data visualizations in virtual reality.</div>
+            <h3>Prototyping in VR</h3>
+            <p>In this Knight Lab Studio class, I joined a group of three other students to explore the fledgling space of VR data visualizations. We spent our quarter researching best practices of 2D visualizations and virtual reality, and designing low-fidelity prototypes using tools like Tilt Brush. We then compiled our findings into an interactive website, complete with a comprehensive list of existing resources for data visualization in VR.</p>
+            <p>We found that the added dimensionality, immersion, and interaction afforded by VR makes it an ideal platform for a new generation of data visualizations that can grant the user unprecedented perspective. At the same time, many data visualizations do not translate well into VR, and care must be taken to create an optimal VR experience.</p>
+			<p><a target="_blank" href="https://studio.knightlab.com/results/exploring-data-visualization-in-vr/uncharted-territory-datavis-vr/">Check out our complete findings on the Knight Lab website.</a> There are also a ton of other VR prototypes you can play around with like the one above!</p>
           </div>
           <button type="button" class="btn dark center" data-dismiss="modal">Close</button></button>
         </div>
       </div>
     </div>
     
-    <div id="" class="modal fade-scale" role="dialog">
-      <div class="modal-dialog modal-lg">
-    
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h2>The Makerspace, located in Northwestern's center for 
-            entrepreneurship and innovation, is a ~2,250 sq ft space that I  designed, built, and maintain.</h2>
-            <p>I began working at The Garage when it first opened, during the fall of 2015. 
-            As a "tech aide," I would help manage the growing collection of cutting-edge tech contained within the space. Throughout my
-            first year there, devices like 3D printers and CNC mills started cluttering the entryway of The Garage, because there
-            was no central location for maker equipment. During the summer of 2016, I had the unique opportunity to convert one of the
-            classrooms into a Makerspace as a full-time internship.</p>
-            <img src="prototyping.jpg" width="100%"></img>
-            <p>About two thirds of the space is the Prototyping Lab, dedicated to The Garage's large collection of maker equipment.
-            Along with the IT Manager at The Garage, I designed the layout of the space, housing 3D printers, CNC mills, woodworking and electronics
-            equipment, and space for future equipment.</p>
-            <img src="mixedreality.jpg" width="100%"></img>
-            <p>The Garage also had a growing collection of VR and AR headsets, but no dedicated place to use them.
-            I designed the AR/VR Lab to fill the other third of the space. It contains a dedicated setup with powerful gaming computers to run the latest VR
-            headsets, as well as green walls and flooring for photography, videography, and "mixed reality" recordings of people in VR experiences. This type
-            of recording can be seen in the photo above: on the large screen, people can see exactly what the person in VR is doing from a third-person perspective.</p>
-            <p>I still work at The Garage during the school year, continuously updating and maintaining the Makerspace. The space gets use every day among
-            the several hardware startups that are currently incubating at The Garage, as well as the multiple startups that are working on VR/AR development.
-            It's also open to the entire Northwestern community for demos of cutting-edge AR/VR tech, such as the Magic Leap One, Oculus Rift, and Microsoft HoloLens.</p>
-            <img src="garage.jpg" width="100%"></img>
-            <p>I also wrote the pages on The Garage website that detail all of the equipment contained in the <a target="_blank" href="https://thegarage.northwestern.edu/resources/prototyping-lab/"><b>Prototyping Lab</b></a> and <a target="_blank" href="https://thegarage.northwestern.edu/resources/ar-vr-lab/"><b>VR/AR Lab</b></a>, as
-            well as The Garage help desk articles. Check out the pages to see detailed lists of all the equipment contained in the space. I still love working
-            at The Garage, not only because I get to see a space I created in constant use, but also because I love using the space myself! I'm a huge
-            VR geek, as you can tell from the above photo. I am often the one that convinces The Garage what latest high-tech gadget to buy next.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="close" data-dismiss="modal">Close</button></button>
-          </div>
-        </div>
-    
-      </div>
-    </div>
-
-    <section>
-	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#algorithmsModal">
-			<video class="homeimage" autoplay loop muted poster="algorithms.jpg">
-				
-			</video>
-			<h1>Tackling Fake News</h1>
-			<div class="tagline">User interface study for the Facebook News Feed</div>
-	    </div>
-    </section>
-    
-    <div id="algorithmsModal" class="modal fade-scale" role="dialog">
-      <div class="modal-dialog modal-lg">
-    
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h2>The Facebook News Feed has a fake news problem. This project attempts to address it from a user interface perspective.</h2>
-            <p>Algorithms and Society was a highly interdisciplinary seminar class taught by Professor Brent Hecht. Each week, we covered
-            one of many alarming impacts algorithms have on society, from the sharing economy to the filter bubble. As part of a quarter-long group project,
-            we were tasked with attempting to ameliorate one of the problems discussed in class. My group took a stab at tackling a massive one: fake news.</p>
-            <p>Building off of existing research on algorithmic methods of fake news detection, we addressed user interface concerns for what a fake news detection tool
-            would look like. We devised an interface motivated by relevant HCI and cognitive psychology research, ran user testing experiments on our prototypes, and analyzed our findings
-            in a final paper.</p>
-            <p><a target="_blank" href="TacklingFakeNews.pdf"><b>Read the final paper here.</b></a></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="close" data-dismiss="modal">Close</button></button>
-          </div>
-        </div>
-    
-      </div>
-    </div>
-
-    <section>
-	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#dataModal">
-			<video class="homeimage" autoplay loop muted poster="data.jpg">
-				
-			</video>
-			<h1>Data Viz in VR</h1>
-			<div class="tagline">Exploring data visualization in immersive environments</div>
-	    </div>
-    </section>
-    
-    <div id="dataModal" class="modal fade-scale" role="dialog">
-      <div class="modal-dialog modal-lg">
-    
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h2>At Northwestern's lab for media innovation, I explored the immense possibilities and best practices for data visualizations in virtual reality.</h2>
-            <p>Every quarter the Knight Lab runs various studio projects. During the winter quarter of 2017, I joined a group of three other students to
-            explore the fledgling space of VR data visualizations. We spent our quarter researching best practices of 2D visualizations and virtual reality, and designing
-             low-fidelity prototypes using tools like Tilt Brush. We then compiled our findings into an interactive website, complete with a comprehensive list
-             of existing resources for data visualization in VR.</p>
-             <p>We found that the added dimensionality, immersion, and interaction afforded by VR makes it a wonderful platform for a new generation of data 
-             visualizations that can grant the user unprecedented perspective. At the same time, many data visualizations do not translate well into VR, and
-             care must be taken to create an optimal VR experience.</p>
-             <p><a target="_blank" href="https://studio.knightlab.com/results/exploring-data-visualization-in-vr/uncharted-territory-datavis-vr/"><b>Check out our complete findings on the Knight Lab website.</b></a> 
-             You can even view our prototypes in VR using a mobile VR headset like Google Cardboard.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="close" data-dismiss="modal">Close</button></button>
-          </div>
-        </div>
-    
-      </div>
-    </div>
-
-    <section>
-	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#catnipModal">
-			<video class="homeimage" autoplay loop muted poster="catnip.jpg">
-				
-			</video>
-			<h1>Catnip</h1>
-			<div class="tagline">Northwestern-tailored time management app</div>
-	    </div>
-    </section>
-    
     <div id="catnipModal" class="modal fade-scale" role="dialog">
-      <div class="modal-dialog modal-lg">
-    
+      <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+      <div class="modal-dialog modal-xl">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-          </div>
+        	<div class="videoWrapper">
+      			<video width="100%" autoplay loop muted poster="catnip.jpg" class="leadimage">
+				
+				</video>
+            </div>
+            <h6 class="caption" id="headercaption">Mockup of the final iteration of Catnip<br><span style="font-size: 0.8em;">Credit: Design 384 Catnip team</span></h6>
+            <hr class="captionline" style="margin-bottom: 0px;">
           <div class="modal-body">
-            <h2>Catnip is a mobile app developed out of a year-long project dedicated to helping Northwestern students manage their time.</h2>
-            <p>It began as a design project between me and two other students. We went through countless iterations and user testing trials to create a solution
-            that would benefit as many students as possible. Initially known as Project Catnip (Go 'Cats!), by the end of the quarter we called it NU 101.</p>
-            <p>However, the idea was popular enough that it was taken up by upper-level design students as a two-quarter project to further refine and implement our
-            ideas. While out final prototype was purely visual and nonfunctional, this group of four students was tasked with bringing in a level of functionality. 
-            My original group and I acted as clients for the new group, offering continuous feedback and guidance to meet the original goals of our project. By the end 
-            of their project period, the app was capable of some of our original goals, such as scraping from Canvas, our class management site, as well as 
-            Caesar, our general Northwestern portal. They also created the professional rendering of the app that is displayed here.</p>
-            <p>The main features of the app are a priority-based calendar, automated entry system, and school-based messaging. Our trials showed students 
-            benefitted from a calendar that didn't just show time allocated to tasks, but also priority given to those tasks. Our priority calendar was
-             also easy-to-use because it could scrape from existing calendars and Northwestern sites. The messaging feature allowed students to connect with 
-             peers in their classes or student organizations. We also devised a rollout strategy that would integrate with the freshman orientation program to 
-             encourage high adoption rates for the app.</p>
+          	<h1>Catnip</h1>
+          	<hr class="titleunderline">
+            <div class="tagline">Catnip is a mobile app developed out of a year-long project dedicated to helping Northwestern students manage their time.</div>
+            <h3>Human-centered design</h3>
+            <p>Catnip began as a design project between me and two other students. We went through countless iterations and user testing trials to create a solution that would benefit as many students as possible. Initially known as Project Catnip (Go 'Cats!), by the end of the quarter we called it NU 101.</p>
+            <p>The main features of the app are a priority-based calendar, an automated calendar entry system, and school-based messaging. Our trials showed students benefitted from a calendar that didn't just show time allocated to tasks, but also priority given to those tasks. Our priority calendar was also easy-to-use because it could scrape from existing calendars and Northwestern sites.</p>
+        	<p>The messaging feature allowed students to connect with peers in their classes or student organizations. We also devised a rollout strategy that would integrate with the freshman orientation program to encourage high adoption rates for the app.</p>
+			<img src="CatnipMockups.jpg" width="100%"></img>
+            <h6 class="caption">Mockups I made demonstrating the top 3 features of Catnip</h6>
+            <hr class="captionline">
+            <h3>Advancing the project</h3>
+            <p>The idea was popular enough that it was adopted by upper-level design students as a two-quarter project to further refine and implement our ideas. While our final prototype was purely visual and nonfunctional, this group of four students was tasked with bringing in a level of functionality.</p>
+            <p>My original group and I acted as clients for the new group, offering continuous feedback and guidance to meet the original goals of our project. By the end of their project period, the app was capable of some of our original goals, such as scraping from Canvas, our class management site, as well as Caesar, our general Northwestern portal. They also created new app renderings, such as the one above.</p>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="close" data-dismiss="modal">Close</button></button>
-          </div>
+          <button type="button" class="btn dark center" data-dismiss="modal">Close</button></button>
         </div>
+      </div>
+    </div>
     
+    <div id="arcadeModal" class="modal fade-scale" role="dialog">
+      <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+        	<div class="videoWrapper">
+        		<video width="100%" autoplay loop muted poster="arcade.jpg" class="leadimage">
+				
+				</video>
+            </div>
+            <h6 class="caption" id="headercaption">The restored Mortal Kombat II arcade cabinet</h6>
+            <hr class="captionline" style="margin-bottom: 0px;">
+          <div class="modal-body">
+          	<h1>Mortal Kombat II</h1>
+          	<hr class="titleunderline">
+            <div class="tagline">I found an arcade cabinet by a dumpster, brought it back to life, and now it can play just about any arcade game.</div>
+        	<h3>Rescuing a gaming classic</h3>
+            <p>One rainy day during the fall of 2016, I walked by the dumpsters outside of Northwestern's fraternities, and saw this beautiful Mortal Kombat II arcade cabinet just sitting there. I couldn't imagine why someone would throw it out, until I got closer and realized it was missing its entire controls panel, with severed wires dangling from the opening. I got a group together to rescue it from the rain. We talked about restoring it and making it the centerpiece of our dorm, but classes and a lack of funds for new parts got in the way.</p>
+            <img src="brokenarcade.jpg" width="100%" class="center"></img>
+            <h6 class="caption">The sad state of the cabinet before restoration. Its control panel was completely gone.</h6>
+            <hr class="captionline">
+            <h3>Restoration</h3>
+            <p>In early 2017, I asked the executive director of The Garage if I could bring it there to work on it. Not only did she accept, but she also offered to buy the necessary parts for its restoration. I started by simply replacing the frayed power cable, which turned out to be all it needed to work again, although it wasn't much use without its joysticks and buttons. Throughout the spring of 2017, I continued to restore it, assembling a new controls panel and rewiring all the parts. By the end of the spring, it worked flawlessly, as if the panel had never been missing.</p>
+            <img src="fixedarcade.jpg" width="100%" class="center"></img>
+            <h6 class="caption">The controls panel after restoration. Just like new!</h6>
+            <hr class="captionline">
+            <h3>Pushing boundaries</h3>
+        	<p>But I wanted it to do more. I ordered a Raspberry Pi and conversion board to hook up the buttons, joysticks, and original CRT with the Pi, and after some software fiddling, I had a versatile arcade cabinet that could play everything from Pac Man to Galaga thanks to emulators. Today, it lives in the AR/VR Lab of The Garage, offering the quintessential arcade cabinet experience that every co-working space should have.</p>
+          </div>
+          <button type="button" class="btn dark center" data-dismiss="modal">Close</button></button>
+        </div>
       </div>
     </div>
     
@@ -435,46 +487,6 @@
       </div>
     </div>
 	-->
-
-    <section style="margin-bottom: 10%;">
-	    <div class="inner" data-toggle="modal" data-toggle="tooltip" title="Click to learn more" data-target="#arcadeModal">
-			<video class="homeimage" autoplay loop muted poster="arcade.jpg">
-				
-			</video>
-			<h1>Mortal Kombat II</h1>
-			<div class="tagline">Arcade cabinet restoration and retrofit</div>
-	    </div>
-    </section>
-    
-    <div id="arcadeModal" class="modal fade-scale" role="dialog">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" id="x" data-dismiss="modal">&times;</button>
-          </div>
-          <div class="modal-body">
-            <h2>I found this arcade cabinet in a dumpster, brought it back to life, and now it can play just about any arcade game.</h2>
-            <p>One rainy day during the fall of 2016, I walked by the dumpsters outside of Northwestern's fraternities, and saw this beautiful Mortal Kombat II
-            arcade cabinet just sitting there. I couldn't imagine why someone would throw it out, until I got closer and realized it was missing its entire
-            controls panel, with severed wires dangling from the opening. I got a group together to rescue it from the rain. We talked about restoring it and making
-            it the centerpiece of our dorm, but classes and a lack of funds for new parts got in the way.</p>
-            <p>In early 2017, I asked the executive director of The Garage if I could bring it there to work on it. Not only did she accept, but she also
-            offered to buy the necessary parts for its restoration. I started by simply replacing the frayed power cable, plugging it in, and lo and behold - it 
-            worked again! Throughout the spring of 2017, I continued to restore it, assembling a new controls panel and rewiring all the parts. By the end of 
-            the spring, it worked flawlessly, as if the panel had never been missing.</p>
-            <p>But I wanted it to do more. I ordered a Raspberry Pi and conversion board to hook up the buttons, joysticks, and original CRT with the Pi, and
-            after some software fiddling, I had a versatile arcade cabinet that could play everything from Pac Man to Galaga thanks to emulators. While I had it 
-            working roughly by the end of spring, I'm continuing to refine the software to make the user experience optimal. Eventually, I should be able to 
-            switch between the original Mortal Kombat II board and the Pi with a press of a button.</p>
-            <p>Today, it lives in the VR Lab of The Garage, offering the quintessential arcade cabinet experience that every co-working space should have.</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="close" data-dismiss="modal">Close</button></button>
-          </div>
-        </div>
-    
-      </div>
-    </div>
     
     <!--
     <section class="deception">  
@@ -487,7 +499,7 @@
 
     <section style="margin-bottom: 2%; height:100%;">
       <div>
-      	<h3 id="contacttitle">CONTACT</h3>
+      	<h3 id="contacttitle" style="margin-bottom: -5px;">CONTACT</h3>
         <div class="contactlinks"><a href="mailto:gabe@gcan.co">Email</a><br><a target="_blank" href="https://www.linkedin.com/in/gcaniglia/">LinkedIn</a><br><a target="_blank" href="ResumeGabrielCaniglia.pdf">Resume</a></div>
         <div class="contactlinks2"><br><br>&copy; Gabriel Caniglia 2018</div>
      </div>
@@ -495,6 +507,8 @@
     
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.min.js"></script>
     <script src="site.js"></script>
 </body>
 </html>
