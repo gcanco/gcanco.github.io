@@ -102,8 +102,8 @@ window.addEventListener('load', onVrViewLoad);
 function onVrViewLoad() {
   // Selector '#vrview' finds element with id 'vrview'.
   var vrView = new VRView.Player('#vrview', {
-    image: 'https://www.gcan.co/pano_left.jpg', //change to 3d.jpg, stereo=true, try color correcting image
-    is_stereo: false,
+    image: 'https://www.gcan.co/3dpano.jpg', //change to 3d.jpg, stereo=true, try color correcting image
+    is_stereo: true,
     width: "100%",
     height: "600px"
   });
