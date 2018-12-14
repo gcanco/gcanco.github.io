@@ -299,6 +299,7 @@ a {
   /*color: #779cd6;*/
   color: #a0a5a9;
   position: relative;
+  text-decoration: none;
 }
 
 a:hover {
