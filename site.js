@@ -118,8 +118,12 @@ $(function() {
   $('.inner').hover(function() {
     $(this).find('.homeimage').css('box-shadow', '0px 0px 20px 0 rgba(0, 0, 0, 0.8), 0px 0px 20px 0 rgba(0, 0, 0, 0.8)');
     $(this).find('.homeimage').css('transform', 'scale(1.01, 1.01)');
+    $(this).find('.homeimage2').css('box-shadow', '0px 0px 20px 0 rgba(0, 0, 0, 0.8), 0px 0px 20px 0 rgba(0, 0, 0, 0.8)');
+    $(this).find('.homeimage2').css('transform', 'scale(1.01, 1.01)');
   }, function() {
     $(this).find('.homeimage').css('transform', 'scale(1.0, 1.0)');
     $(this).find('.homeimage').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5)');
+    $(this).find('.homeimage2').css('transform', 'scale(1.0, 1.0)');
+    $(this).find('.homeimage2').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5)');
   });
 });
