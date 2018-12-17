@@ -18,19 +18,6 @@ $(function() {
   }
 });
 
-/*
-//Allow for gcan.co/#marathonmodal to link to marathon project
-$(document).ready(function() {
-  var modal = "#marathonModal"
-  if(window.location.href.indexOf(modal) != -1) {
-    $(modal).modal('show');
-  }
-
-});
-*/
-
-
-
 //text carousel code
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -118,12 +105,12 @@ $(function() {
   $('.inner').hover(function() {
     $(this).find('.homeimage').css('box-shadow', '0px 0px 20px 0 rgba(0, 0, 0, 0.8), 0px 0px 20px 0 rgba(0, 0, 0, 0.8)');
     $(this).find('.homeimage').css('transform', 'scale(1.01, 1.01)');
-    $(this).find('.homeimage2').css('box-shadow', '0px 0px 20px 0 rgba(0, 0, 0, 0.8), 0px 0px 20px 0 rgba(0, 0, 0, 0.8)');
+    $(this).find('.homeimage2').css('box-shadow', '0px 0px 20px 0 rgba(0, 0, 0, 0.8), 0px 0px 10px 0 rgba(0, 0, 0, 0.8)');
     $(this).find('.homeimage2').css('transform', 'scale(1.01, 1.01)');
   }, function() {
     $(this).find('.homeimage').css('transform', 'scale(1.0, 1.0)');
     $(this).find('.homeimage').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5)');
     $(this).find('.homeimage2').css('transform', 'scale(1.0, 1.0)');
-    $(this).find('.homeimage2').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5)');
+    $(this).find('.homeimage2').css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 10px 0 rgba(0, 0, 0, 0.5)');
   });
 });

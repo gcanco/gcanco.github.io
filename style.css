@@ -26,10 +26,36 @@ section {
   border-radius: 25px;
 }
 
-@media (min-width: 1156px) {
+@media (min-width: 1200px) {
   .modal-xl {
     width: 1056px;
   }
+  #x {
+    left: calc(50% + 542px);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .modal-xl {
+    width: 88%;
+  }
+  #x {
+    left: calc(95%);
+  }
+}
+
+@media (max-width: 767px) {
+  #x {
+    display: none;
+  }
+}
+
+#x {
+  font-size: 4em;
+  font-weight: 300;
+  padding-left: 0px;
+  position: fixed;
+  top: 20px;
 }
 
 .headerformat {
@@ -65,11 +91,6 @@ body.modal-open .inner{
 .fade-scale.in {
   opacity: 1;
   transform: scale(1);
-}
-
-.fade-scale.out {
-  transform: scale(0.9);
-  opacity: 1;
 }
 
 .bounceInUp {
@@ -324,14 +345,14 @@ footer {
 }
 .tagline {
   font-weight: 300;
-  font-size: 1.8vw;
+  font-size: 1.75vw;
   margin-top: -5px;
   line-height: 1.3;
   padding-bottom: 30px;
 }
 .taglineE {
   font-weight: 300;
-  font-size: 1.8vw;
+  font-size: 1.75vw;
   margin-top: -5px;
   line-height: 1.3;
   /*color: #779cd6;*/
@@ -429,14 +450,6 @@ footer {
   color: white;
   background-color: #101011;
 }
-#x {
-  font-size: 4em;
-  font-weight: 300;
-  padding-left: 0px;
-  position: fixed;
-  top: 20px;
-  left: calc(50% + 542px);
-}
 .videoWrapper {
   margin-top: 0px;
 	position: relative;
@@ -463,12 +476,12 @@ li {
 img {
     margin-top: 20px;
 }
-
-#particles-js {
-  position: absolute;
+.hero {
+  object-fit: cover;
   width: 100%;
-  height: 100vh;
-  /*margin-left: -7%;*/
+  height: 75%;
+  margin-top: 0px !important;
+  padding-top: 0px;
 }
 
 .videoContainer 
