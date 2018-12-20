@@ -162,6 +162,9 @@ section {
 }
 
 @media (max-width: 767px) {
+  .bottom {
+    margin-bottom: 5% !important;
+  }
   .dark {
     margin-bottom: 60px !important; 
   }
@@ -222,6 +225,10 @@ section {
   #x {
     display: none;
   }
+}
+
+.bottom {
+  margin-bottom: 2%;
 }
 
 #x {
