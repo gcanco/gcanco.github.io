@@ -36,7 +36,7 @@ var ReactThing = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (ReactThing.__proto__ || Object.getPrototypeOf(ReactThing)).call(this, props));
 
     _this.state = {
-      words: ["virtual reality", "augmented reality", "XR", "spatial computing", "mixed reality"]
+      words: ["virtual reality", "augmented reality", "extended reality", "spatial computing", "mixed reality", "XR"]
     };
     return _this;
   }
@@ -70,7 +70,7 @@ var ReactThing = function (_React$Component) {
         React.createElement(
           "div",
           { className: "tagline" },
-          "I'm currently looking for new experiences in UX research and design. I'm especially excited by the future of human-computer interaction in the era of ",
+          "My previous work has included interactive art installations and academic research in human-computer interaction (HCI). I'm especially excited by the future of HCI in the era of ",
           React.createElement(
             "span",
             { className: "taglineE" },
