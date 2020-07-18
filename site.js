@@ -36,7 +36,7 @@ var ReactThing = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (ReactThing.__proto__ || Object.getPrototypeOf(ReactThing)).call(this, props));
 
     _this.state = {
-      words: ["virtual reality.\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0", "augmented reality.", "extended reality.\u00A0\u00A0\u00A0\u00A0", "spatial computing.\u00A0", "mixed reality.\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0", "XR.\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"]
+      words: ["virtual reality. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0", "augmented reality.", "extended reality. \u00A0\u00A0\u00A0", "spatial computing.\u00A0", "mixed reality. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0", "XR. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"]
     };
     return _this;
   }
