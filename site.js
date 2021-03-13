@@ -36,7 +36,7 @@ var ReactThing = function (_React$Component) {
     var _this = _possibleConstructorReturn(this, (ReactThing.__proto__ || Object.getPrototypeOf(ReactThing)).call(this, props));
 
     _this.state = {
-      words: ["virtual reality. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0", "augmented reality.", "extended reality. \u00A0\u00A0\u00A0", "spatial computing.\u00A0", "mixed reality. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0", "XR. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0"]
+      words: ["virtual reality. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0", "augmented reality.", "spatial computing.\u00A0", "mixed reality. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0", "XR. \u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0", "extended reality. \u00A0\u00A0\u00A0"]
     };
     return _this;
   }
@@ -70,7 +70,7 @@ var ReactThing = function (_React$Component) {
         React.createElement(
           "div",
           { className: "tagline" },
-          "My previous work has included interactive art installations and academic research in human-computer interaction (HCI). I'm especially excited by the future of HCI in the era of ",
+          "My previous work has included internationally-exhibited interactive art installations and published research in human-computer interaction (HCI). I\u2019m especially excited by the future of HCI in the era of ",
           React.createElement(
             "span",
             { className: "taglineE" },
